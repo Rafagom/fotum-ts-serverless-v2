@@ -3,5 +3,27 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white text-[#00324b];
+    @apply bg-white text-[#00324b];
+}
+
+.bounce {
+    animation: bounce 1.5s infinite alternate;
+    -webkit-animation: bounce 1.5s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
