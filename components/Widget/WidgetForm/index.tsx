@@ -19,7 +19,7 @@ export type optionType = {
 
 export function WidgetForm() {
     const [isFormEnd, setIsFormEnd] = useState(false);
-    const [isVerifyModalOpen, setIsVerifyModalOpen] = useState(false);
+    const [isPowCalcModalOpen, setIsPowCalcModalOpen] = useState(false);
     const [screenshot, setScreenshot] = useState<string | null>(null);
     const [option, setOption] = useState<{
         name: string;
@@ -35,7 +35,7 @@ export function WidgetForm() {
             imgAlt: "Calculadora",
             action: (choosenOption: optionType) => {
                 // e.preventDefault;
-                setupVerifyHandler();
+                PowCalcModalHandler();
             },
         },
 
@@ -63,8 +63,8 @@ export function WidgetForm() {
         setOption(null);
     }
 
-    function setupVerifyHandler() {
-        setIsVerifyModalOpen(!isVerifyModalOpen);
+    function PowCalcModalHandler() {
+        setIsPowCalcModalOpen(!isPowCalcModalOpen);
     }
 
     return (
@@ -90,8 +90,8 @@ export function WidgetForm() {
                 {/* <footer className="text-xs">Made by @engineergomes </footer> */}
             </div>
             <PowerCalculatorModal
-                isOpen={isVerifyModalOpen}
-                onClose={setupVerifyHandler}
+                isOpen={isPowCalcModalOpen}
+                onClose={PowCalcModalHandler}
             />
         </>
     );
