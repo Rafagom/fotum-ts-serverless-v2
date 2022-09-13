@@ -48,7 +48,7 @@ export default function PowerCalculatorModal({
                                         as="h3"
                                         className="text-lg font-medium leading-6 text-gray-900"
                                     >
-                                        Verify Bot Settings
+                                        Dimensionador de Sistemas Fotovoltaicos
                                     </Dialog.Title>
                                     {/* <VerifyBotSetupForm /> */}
                                 </Dialog.Panel>

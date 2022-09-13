@@ -4,9 +4,13 @@ import Image from "next/image";
 import {
     ArrowDown,
     ArrowFatLinesDown,
+    Calculator,
     CurrencyCircleDollar,
     HouseLine,
+    Lightbulb,
     Medal,
+    NumberSeven,
+    NumberTwo,
     WhatsappLogo,
 } from "phosphor-react";
 import { Footer } from "../components/Footer";
@@ -24,7 +28,7 @@ const adsSolarGeneration: NextPage = () => {
                 {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>
             <Header />
-            <div className="flex flex-col p-6 gap-8 ">
+            <div className="flex flex-col p-4 gap-8 h-screen">
                 <div className="flex flex-col gap-4">
                     <p className="text-xl ">Fale com um</p>
                     <h2 className="text-5xl font-extrabold">
@@ -39,9 +43,9 @@ const adsSolarGeneration: NextPage = () => {
                 </div>
 
                 <div className="flex flex-col gap-12">
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-4">
                         <a
-                            href="https://api.whatsapp.com/message/2KTISK2P7CG6E1?autoload=1&app_absent=0"
+                            href="https://wa.me/message/2KTISK2P7CG6E1"
                             target="_blank"
                             rel="noreferrer"
                             className="flex items-center gap-2 justify-center bg-green-500 font-bold py-3 px-6 rounded-3xl text-lg hover:bg-green-200"
@@ -53,20 +57,27 @@ const adsSolarGeneration: NextPage = () => {
                             (48) 98411-0903 - Florianópolis e Região
                         </a>
                     </div>
-                    <div className="flex gap-2 justify-center items-center font-bold uppercase text-center text-xl">
-                        <ArrowDown size={24} weight="duotone" />
+                    <div className="relative flex flex-col gap-2 justify-center items-center font-bold uppercase text-center text-xl">
+                        {/* <ArrowDown
+                            className="arrow-bounce"
+                            size={24}
+                            weight="duotone"
+                        /> */}
                         <p>Ver mais</p>
+                        <div className="chevron text"></div>
+                        <div className="chevron"></div>
+                        <div className="chevron"></div>
                     </div>
                 </div>
             </div>
 
-            <div className="flex flex-col p-6 gap-8 bg-gray-200">
+            <div className="flex flex-col p-4 gap-8 bg-gray-200">
                 {/* -- Mobile -- */}
-                <div className="sm:hidden  grid grid-rows-3 gap-5  text-[#ffaa00] mt-6">
+                <div className="sm:hidden  grid grid-rows-4 gap-5  text-[#ffaa00] mt-6">
                     <div className="grid grid-cols-[2fr,8fr] px-8 py-4  gap-4 items-center justify-start bg-[#00324b] rounded-full">
                         <HouseLine size={72} weight="thin" />
                         <p>
-                            Valorização do imóvel e curto periodo de retorno de
+                            Valorização do imóvel e rápido retorno de
                             investimento
                         </p>
                     </div>
@@ -78,10 +89,17 @@ const adsSolarGeneration: NextPage = () => {
                         </p>
                     </div>
                     <div className="grid grid-cols-[2fr,8fr] px-8 py-2 gap-4 items-center justify-start bg-[#00324b] rounded-full">
-                        <CurrencyCircleDollar size={72} weight="thin" />
+                        <Lightbulb size={72} weight="thin" />
                         <p className="w-[16ch]">
                             Até 95% <br />
                             de economia na conta de energia{" "}
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-[2fr,8fr] px-8 py-2 gap-4 items-center justify-start bg-[#00324b] rounded-full">
+                        <CurrencyCircleDollar size={72} weight="thin" />
+
+                        <p className="w-[16ch]">
+                            Parcele em até 72x, sem entrada
                         </p>
                     </div>
                 </div>
@@ -98,7 +116,7 @@ const adsSolarGeneration: NextPage = () => {
                     </div>
                 </div>
                 <a
-                    href="https://api.whatsapp.com/message/2KTISK2P7CG6E1?autoload=1&app_absent=0"
+                    href="https://wa.me/message/2KTISK2P7CG6E1"
                     target="_blank"
                     rel="noreferrer"
                     className="flex flex-col gap-4 mt-6"
@@ -109,7 +127,7 @@ const adsSolarGeneration: NextPage = () => {
                 </a>
             </div>
 
-            <div className="flex flex-col gap-3 p-6">
+            <div className="flex flex-col gap-3 p-4">
                 <h1 className="text-3xl font-extrabold text-center">
                     Sobre o Engenheiro
                 </h1>
@@ -140,6 +158,48 @@ const adsSolarGeneration: NextPage = () => {
                     Elétrica – CCEE e Operador Nacional do Sistema Elétrico –
                     ONS.
                 </p>
+            </div>
+
+            <div className="flex flex-col gap-3 p-4 bg-gray-200">
+                <h1 className="text-3xl font-extrabold text-center">
+                    Sobre a Empresa
+                </h1>
+
+                <div className="flex items-center justify-center">
+                    <Image
+                        className=" rounded-full"
+                        src={"/engLucas.jpg"}
+                        width={200}
+                        height={200}
+                        alt="Engenheiro Lucas"
+                    />
+                </div>
+
+                <hr className="bg-[#00324b]" />
+                <h2 className="text-2xl font-bold text-center">
+                    Fótum Engenharia
+                </h2>
+                <p className="text-center text-xl">
+                    A Fótum Engenharia conta com mais de 10 anos de experiência
+                    em serviços elétricos de excelência, oferecendo as melhores
+                    soluções em projetos, instalações e energia solar
+                    fotovoltaica. Com equipe especializada e altamente
+                    capacitada, oferecemos segurança e garantia em todos os
+                    serviços prestados, atendendo à todas as normas técnicas e
+                    de segurança vigente. Os nossos valores estão pautados na
+                    confiança, transparência e respeito.
+                </p>
+
+                <a
+                    href="https://wa.me/message/2KTISK2P7CG6E1"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex flex-col gap-4 mt-6"
+                >
+                    <div className="flex items-center justify-center bg-green-500 font-bold py-3 px-6 rounded-3xl text-lg hover:bg-green-200">
+                        Falar com um especialista
+                    </div>
+                </a>
             </div>
 
             <Footer />
