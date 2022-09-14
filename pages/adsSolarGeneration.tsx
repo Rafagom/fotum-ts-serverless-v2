@@ -13,13 +13,16 @@ import {
     NumberTwo,
     WhatsappLogo,
 } from "phosphor-react";
+import { useState } from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { Services } from "../components/Services";
 import styles from "../styles/Home.module.css";
+// @ts-ignore
+import AnimatedNumber from "react-animated-number";
 
-const adsSolarGeneration: NextPage = () => {
+const AdsSolarGeneration: NextPage = () => {
     return (
         <div>
             <Head>
@@ -127,6 +130,64 @@ const adsSolarGeneration: NextPage = () => {
                 </a>
             </div>
 
+            {/* Number stats */}
+            <div className="flex flex-col gap-6">
+                <div className="flex flex-col items-center justify-center">
+                    <AnimatedNumber
+                        style={{
+                            transition: "0.8s ease-out",
+                            transitionProperty: "background-color, color",
+                            fontSize: 36,
+                            fontWeight: 500,
+                        }}
+                        duration={2000}
+                        stepPrecision={0}
+                        value={100}
+                        formatValue={(n: number) =>
+                            `+${n.toLocaleString("pt-BR")} `
+                        }
+                    />
+                    <p className="text-2xl ">Clientes satisfeitos</p>
+                </div>
+
+                <div className="flex flex-col items-center justify-center">
+                    <AnimatedNumber
+                        style={{
+                            transition: "0.8s ease-out",
+                            transitionProperty: "background-color, color",
+                            fontSize: 36,
+                            fontWeight: 500,
+                        }}
+                        duration={2000}
+                        stepPrecision={0}
+                        value={7200}
+                        formatValue={(n: number) =>
+                            `${n.toLocaleString("pt-BR")} Mwh`
+                        }
+                    />
+                    <p className="text-2xl ">Energia Gerada</p>
+                </div>
+
+                <div className="flex flex-col items-center justify-center">
+                    <AnimatedNumber
+                        style={{
+                            transition: "0.8s ease-out",
+                            transitionProperty: "background-color, color",
+                            fontSize: 36,
+                            fontWeight: 500,
+                        }}
+                        duration={2000}
+                        stepPrecision={0}
+                        value={6984000}
+                        formatValue={(n: number) =>
+                            `R$ ${n.toLocaleString("pt-BR")}`
+                        }
+                    />
+                    <p className="text-2xl ">Economizados</p>
+                </div>
+            </div>
+
+            {/* About the engineer */}
             <div className="flex flex-col gap-3 p-4">
                 <h1 className="text-3xl font-extrabold text-center">
                     Sobre o Engenheiro
@@ -160,6 +221,7 @@ const adsSolarGeneration: NextPage = () => {
                 </p>
             </div>
 
+            {/* About the company */}
             <div className="flex flex-col gap-3 p-4 bg-gray-200">
                 <h1 className="text-3xl font-extrabold text-center">
                     Sobre a Empresa
@@ -207,4 +269,4 @@ const adsSolarGeneration: NextPage = () => {
     );
 };
 
-export default adsSolarGeneration;
+export default AdsSolarGeneration;
