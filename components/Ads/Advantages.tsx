@@ -5,7 +5,7 @@ import {
     Medal,
 } from "phosphor-react";
 
-function Advantages() {
+export function Advantages() {
     return (
         <div className="bg-gray-200">
             <div className="flex flex-col p-4 gap-8  lg:max-w-[1400px] lg:mx-auto">
@@ -77,5 +77,3 @@ function Advantages() {
         </div>
     );
 }
-
-export default Advantages;

@@ -5,6 +5,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { Services } from "../components/Services";
+import SolarDiagram from "../components/SolarDiagram";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
             <Hero />
             <Services />
             <Footer />
+            <SolarDiagram />
         </div>
     );
 };
