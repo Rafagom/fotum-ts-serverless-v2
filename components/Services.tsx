@@ -31,7 +31,7 @@ export function Services() {
                                 className={open ? "rotate-180 transform" : ""}
                             />
                         </Disclosure.Button>
-                        <Disclosure.Panel className="text-gray-500">
+                        <Disclosure.Panel className="flex flex-col text-center gap-y-4">
                             <ul className="flex flex-col  gap-5 text-left pl-6">
                                 <li>&#x2713; Projeto</li>
                                 <li>&#x2713; Homologação</li>
@@ -40,6 +40,12 @@ export function Services() {
                                 <li>&#x2713; Ampliações</li>
                                 <li>&#x2713; Remanejamento</li>
                             </ul>
+                            <a
+                                href="/solarGeneration"
+                                className="text-center font-semibold tex"
+                            >
+                                Saiba mais...
+                            </a>
                         </Disclosure.Panel>
                     </>
                 )}
@@ -60,13 +66,19 @@ export function Services() {
                                 className={open ? "rotate-180 transform" : ""}
                             />
                         </Disclosure.Button>
-                        <Disclosure.Panel className="text-gray-500">
-                            <ul className="flex flex-col  gap-5 pl-6">
+                        <Disclosure.Panel className="flex flex-col text-center gap-y-4">
+                            <ul className="flex flex-col  gap-5 text-left pl-6">
                                 <li>&#x2713; Projetos e instalação</li>
                                 <li>&#x2713; Novas instalações e reformas</li>
                                 <li>&#x2713; Adequações normativas</li>
                                 <li>&#x2713; Inspeções e laudos</li>
                             </ul>
+                            <a
+                                href="#"
+                                className="text-center font-semibold tex"
+                            >
+                                Saiba mais...
+                            </a>
                         </Disclosure.Panel>
                     </>
                 )}
@@ -88,8 +100,8 @@ export function Services() {
                                 className={open ? "rotate-180 transform" : ""}
                             />
                         </Disclosure.Button>
-                        <Disclosure.Panel className="text-gray-500">
-                            <ul className="flex flex-col  gap-5 pl-6">
+                        <Disclosure.Panel className="flex flex-col text-center gap-y-4">
+                            <ul className="flex flex-col  gap-5 text-left pl-6">
                                 <li>
                                     &#x2713; Análises de potenciais economias
                                 </li>
@@ -97,6 +109,12 @@ export function Services() {
                                     &#x2713; Medições e identificações de falhas
                                 </li>
                             </ul>
+                            <a
+                                href="#"
+                                className="text-center font-semibold tex"
+                            >
+                                Saiba mais...
+                            </a>
                         </Disclosure.Panel>
                     </>
                 )}

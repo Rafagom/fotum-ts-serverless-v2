@@ -9,10 +9,11 @@ import { Hero } from "../components/Hero";
 import { Services } from "../components/Services";
 import styles from "../styles/Home.module.css";
 
-import About from "../components/Ads/About2";
+import AboutEngineer from "../components/Ads/AboutEngineer";
 import WorkNumbers from "../components/Ads/WorkNumbers";
 import Advantages from "../components/Ads/Advantages";
 import { url } from "inspector";
+import AboutCompany from "../components/Ads/AboutCompany";
 
 const AdsSolarGeneration: NextPage = () => {
     return (
@@ -25,10 +26,7 @@ const AdsSolarGeneration: NextPage = () => {
 
             <Header />
 
-            <div
-                id="hero"
-                className="flex flex-col p-4 gap-8 mb-16 lg:max-w-[1400px] lg:mx-auto lg:px-24 "
-            >
+            <div className="flex flex-col p-4 gap-8 mb-16 lg:max-w-[1400px] lg:mx-auto lg:px-24 ">
                 <div className="flex flex-col gap-4 max-w-3xl">
                     <p className="text-xl lg:text-2xl">Fale com um</p>
                     <h2 className="text-5xl font-extrabold lg:text-7xl">
@@ -62,6 +60,7 @@ const AdsSolarGeneration: NextPage = () => {
                         //     document.getElementsByClassName("work-numbers")
                         // }
                         // href={document.getElementsByClassName("work-numbers")!}
+                        href="#resultados"
                         className="relative flex flex-col gap-2 justify-center items-center font-bold uppercase text-center text-xl"
                     >
                         <p>Ver mais</p>
@@ -71,11 +70,15 @@ const AdsSolarGeneration: NextPage = () => {
                     </a>
                 </div>
             </div>
+            <div id="resultados">
+                <WorkNumbers />
+                <Advantages />
+                <AboutEngineer />
+                <hr className=" w-[75%] mx-auto bg-[#00324b] text-[#00324b] border-t-[#00324b] lg:row-start-3" />
+                <AboutCompany />
 
-            <WorkNumbers />
-            <Advantages />
-            <About />
-            <Footer />
+                <Footer />
+            </div>
         </div>
     );
 };

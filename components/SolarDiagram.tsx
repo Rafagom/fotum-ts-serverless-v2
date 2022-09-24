@@ -1,26 +1,12 @@
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
-
-// interface Props {
-//     emoji: string;
-//     hueA: number;
-//     hueB: number;
-// }
-
-// const cardVariants: Variants = {
-//     offscreen: {
-//         y: 10,
-//     },
-//     onscreen: {
-//         y: 10,
-//         rotate: 0,
-//         transition: {
-//             // type: "spring",
-//             // bounce: 0.4,
-//             duration: 3,
-//         },
-//     },
-// };
+import {
+    motion,
+    Variants,
+    useTime,
+    useTransform,
+    useAnimation,
+} from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 const solarFlux: {
     name: string;
@@ -28,95 +14,127 @@ const solarFlux: {
     pathEnd: string;
     text: string;
     start: number;
-    end: number;
 }[] = [
     {
         name: "Sol",
         pathStart: "/sol.png",
         pathEnd: "/solEnd.png",
         start: 0,
-        end: 2,
+
         text: "A luz do sol chega até os painéis.",
     },
     {
         name: "Painel Solar",
         pathStart: "/solarPanel.png",
         pathEnd: "solarPanelEnd.png",
-        start: 0,
-        end: 2,
+        start: 1,
+
         text: "Os painéis geram corrente contínua.",
     },
     {
         name: "Inversor",
         pathStart: "/gerador.png",
         pathEnd: "/geradorEnd.png",
-        start: 0,
-        end: 2,
+        start: 2,
+
         text: " Os inversores transformam corrente contínua em alternada.",
     },
     {
         name: "Cozinha",
         pathStart: "/cozinha.png",
         pathEnd: "/cozinhaEnd.png",
-        start: 0,
-        end: 2,
+        start: 3,
+
         text: "Os equipamentos elétricos usam a energia solar.",
     },
     {
         name: "Sustentabilidade",
         pathStart: "/sustentabilidade.png",
         pathEnd: "/sustentabilidadeEnd.png",
-        start: 0,
-        end: 2,
+        start: 4,
+
         text: "  A energia não utilizada é devolvida gerando desconto na conta.",
     },
     {
         name: "Investir",
         pathStart: "/investir.png",
         pathEnd: "/investirEnd.png",
-        start: 0,
-        end: 2,
+        start: 5,
+
         text: "E é assim que você pode economizar até 95% da conta.",
     },
 ];
 
 function SolarDiagram() {
+    const time = useTime();
+    const animation = useAnimation();
+    const i = useRef(0);
+    const [order, setOrder] = useState(0);
+    const [animationStart, setAnimationStart] = useState(false);
+
+    async function sequence() {
+        // console.log("Index: ", index);
+
+        await animation.start({
+            y: -20,
+            scale: 1.1,
+            backgroundColor: "#ffaa00",
+        });
+        // await animation.start({ y: 0, scale: 1 });
+        // animation.stop();
+        setOrder(order + 1);
+
+        // console.log("entrou");
+    }
+
+    useEffect(() => {
+        // console.log("ORDER: ", order);
+        if (!(order <= 5)) {
+            setOrder(0);
+        } else {
+            // if (animationStart) {
+            sequence();
+            // }
+        }
+    }, [order]);
+
     return (
         <div className="bg-white">
-            <div className="flex flex-col p-4 gap-8  lg:max-w-[800px] lg:mx-auto">
-                <motion.div
-                    className="grid grid-rows-4 gap-5  text-[#00324b] mt-6 justify-center md:grid-cols-2  md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-12"
-                    // initial="offscreen"
-                    // whileInView="onscreen"
-                    viewport={{ amount: 0.8 }}
-                >
+            <div className="flex flex-col p-4 gap-6  lg:max-w-[800px] lg:mx-auto">
+                <h1 className="text-2xl font-bold">Como Funciona:</h1>
+                <div className="grid grid-cols-2 gap-5  text-[#00324b] justify-center md:grid-cols-2  md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-12">
                     {solarFlux.map((stage) => (
                         <motion.div
                             key={stage.name}
-                            className="border border-[#00324b] rounded-2xl   py-6 px-4 gap-3 text-center  grid grid-rows-[2fr,3fr]  place-items-center"
-                            // initial={{ scale: 0.9 }}
-                            animate={{
-                                y: -20,
-                                color: "#ffaa00",
-                                borderColor: "#ffaa00",
+                            className="relative grid grid-rows-2 border border-[#00324b] rounded-2xl  py-3 px-2  gap-3 text-center   place-items-center lg:grid-rows-[2fr,3fr]   lg:py-6 lg:px-4"
+                            animate={stage.start == order ? animation : ""}
+                            transition={{
+                                duration: 2,
+                                repeat: 1,
+                                repeatType: "reverse",
                             }}
-                            transition={{ duration: 3 }}
-                            viewport={{ amount: 0.8 }}
+                            onViewportEnter={async () => {
+                                if (!animationStart) {
+                                    sequence();
+                                    setAnimationStart(true);
+                                }
+                                // setAnimationStart(false)
+                            }}
                         >
-                            <div className="h-20 w-20 relative">
+                            <div className="absolute top-2 left-2">
+                                {stage.start + 1}
+                            </div>
+                            <div className="h-20 w-20 relative before ">
                                 <Image
-                                    // className="h-[60px] w-[60px]"
                                     src={stage.pathStart}
                                     alt={stage.name}
-                                    // height={60}
-                                    // width={60}
                                     layout="fill"
                                 ></Image>
                             </div>
-                            <p className="font-semibold">{stage.text}</p>
+                            <p className=" font-medium">{stage.text}</p>
                         </motion.div>
                     ))}
-                </motion.div>
+                </div>
             </div>
         </div>
     );
