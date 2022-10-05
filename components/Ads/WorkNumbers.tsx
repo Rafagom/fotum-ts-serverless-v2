@@ -3,7 +3,7 @@ import AnimatedNumber from "react-animated-number";
 
 function WorkNumbers() {
     return (
-        <div className="bg-gray-200">
+        <div id="work-numbers" className="">
             <div className="work-numbers flex flex-col gap-6  text-[#00324b] px-10 py-8  lg:grid lg:grid-cols-3 lg:max-w-[1400px] lg:mx-auto">
                 <div className="flex flex-col items-center justify-center border-2 border-[#00324b] rounded-3xl p-2">
                     <AnimatedNumber

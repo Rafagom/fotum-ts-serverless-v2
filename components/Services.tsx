@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { CaretUp } from "phosphor-react";
+import Link from "next/link";
 
 export function Services() {
     return (
-        <div className="flex flex-col gap-3 px-4 mt-4 mb-16">
+        <div className="flex flex-col gap-3 px-4 mt-4 mb-16 max-w-[1400px] md:mx-auto md:px-0 ">
             <h2 className="text-[#ffaa00] font-medium">NOSSOS SERVIÇOS</h2>
             <p>
                 Impulsionamos a transição para sistemas de energia mais
@@ -40,12 +41,12 @@ export function Services() {
                                 <li>&#x2713; Ampliações</li>
                                 <li>&#x2713; Remanejamento</li>
                             </ul>
-                            <a
+                            <Link
                                 href="/solarGeneration"
-                                className="text-center font-semibold tex"
+                                className="text-center font-semibold"
                             >
                                 Saiba mais...
-                            </a>
+                            </Link>
                         </Disclosure.Panel>
                     </>
                 )}
@@ -73,12 +74,12 @@ export function Services() {
                                 <li>&#x2713; Adequações normativas</li>
                                 <li>&#x2713; Inspeções e laudos</li>
                             </ul>
-                            <a
+                            <Link
                                 href="#"
                                 className="text-center font-semibold tex"
                             >
                                 Saiba mais...
-                            </a>
+                            </Link>
                         </Disclosure.Panel>
                     </>
                 )}
@@ -109,12 +110,12 @@ export function Services() {
                                     &#x2713; Medições e identificações de falhas
                                 </li>
                             </ul>
-                            <a
+                            <Link
                                 href="#"
                                 className="text-center font-semibold tex"
                             >
                                 Saiba mais...
-                            </a>
+                            </Link>
                         </Disclosure.Panel>
                     </>
                 )}

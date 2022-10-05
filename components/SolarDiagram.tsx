@@ -66,9 +66,9 @@ const solarFlux: {
 ];
 
 function SolarDiagram() {
-    const time = useTime();
+    // const time = useTime();
     const animation = useAnimation();
-    const i = useRef(0);
+    // const i = useRef(0);
     const [order, setOrder] = useState(0);
     const [animationStart, setAnimationStart] = useState(false);
 
