@@ -1,3 +1,4 @@
+import Features from "../components/ServicesDesktop";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -8,6 +9,9 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { Services } from "../components/Services";
+import { KnownBrands } from "../components/KnownBrands";
+import { Hero2 } from "../components/Hero2";
+
 // import SolarDiagram from "../components/SolarDiagram";
 
 const Home: NextPage = () => {
@@ -24,16 +28,28 @@ const Home: NextPage = () => {
                 </div>
 
                 <div className="flex flex-col mt-20  ">
-                    <Hero />
-                    <div className="mt-6 w-full bg-gray-200">
-                        <WorkNumbers />
+                    <div className="relative">
+                        <Hero />
+                    </div>
+                    <div className="relative">
+                        <Hero2 />
                     </div>
 
-                    <Advantages />
+                    <div className="hidden md:block">
+                        <Features />
+                    </div>
 
-                    <Services />
+                    {/* <Advantages /> */}
+                    <div className="md:hidden">
+                        <Services />
+                    </div>
+
+                    <KnownBrands />
+
                     {/* <SolarDiagram /> */}
-                    <AboutEngineer />
+                    <div className="pt-48 pb-10">
+                        <AboutEngineer />
+                    </div>
 
                     <Footer />
                 </div>

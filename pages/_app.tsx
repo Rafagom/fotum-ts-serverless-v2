@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import "aos/dist/aos.css";
+
 import type { AppProps } from "next/app";
 
 import { Widget } from "../components/Widget";
@@ -11,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         AOS.init({
             once: true,
             disable: "phone",
-            duration: 700,
+            duration: 900,
             easing: "ease-out-cubic",
         });
     });
