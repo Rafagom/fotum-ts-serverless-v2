@@ -31,13 +31,13 @@ export function Header() {
 
     return (
         <header
-            className={`fixed  top-0  w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
+            className={`fixed top-0 w-full z-50 md:bg-opacity-90 transition duration-300 ease-in-out bg-white ${
                 !top && "bg-white backdrop-blur-sm shadow-lg"
             }`}
         >
             <div className="max-w-[1400px] mx-auto">
                 <Popover>
-                    <div className="relative pt-6  lg:px-0 sm:pt-0 mx-auto px-5 sm:px-6">
+                    <div className="relative pt-6 pb-2 lg:px-0 sm:pt-0 mx-auto px-5 sm:px-6 z-50 ">
                         <nav className="relative flex items-center justify-between sm:h-14 lg:justify-start">
                             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                                 <div className="flex items-center justify-between w-full md:w-auto">

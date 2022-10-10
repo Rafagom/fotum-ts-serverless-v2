@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export function Hero2() {
     return (
-        <div className="flex flex-col gap-12  mb-5 max-w-[1400px] mx-auto h-[60vh]">
+        <div className="flex flex-col gap-12  mb-5 max-w-[1400px] mx-auto sm:h-[60vh]">
             <div className="md:grid md:grid-cols-2 md:gap-x-24 items-center justify-center h-full">
-                <div className="flex justify-center items-center md:col-start-1 w-full  rounded-l-3xl">
+                <div className="hidden sm:flex justify-center items-center md:col-start-1 w-full  rounded-l-3xl">
                     <div
                         className="flex absolute shadow left-0 top-auto  rounded-r-3xl "
                         data-aos="fade-right"
@@ -21,10 +21,10 @@ export function Hero2() {
                 </div>
 
                 <div
-                    className=" md:flex md:flex-col md:gap-10 md:h-full flex justify-center items-center"
+                    className=" flex flex-col  md:gap-10 md:h-full justify-center items-center"
                     data-aos="zoom-y-out"
                 >
-                    <p className="px-4 text-3xl md:px-0">
+                    <p className="px-4 text-lg sm:text-3xl md:px-0">
                         Equipe especializada e altamente capacitada, oferecemos
                         segurança e garantia em todos os serviços prestados,
                         atendendo à todas as normas técnicas e de segurança

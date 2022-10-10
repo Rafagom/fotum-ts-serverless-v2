@@ -4,12 +4,13 @@ function AboutEngineer() {
     return (
         <>
             {/* About the engineer */}
-            <div className="grid grid-cols-[4fr,2fr]">
-                <div className="flex items-center place-self-start rounded-3xl col-start-2 row-start-1">
+            <div className="flex sm:grid sm:grid-cols-[4fr,2fr] sm:max-w-full">
+                <div className="hidden sm:flex items-center place-self-start rounded-3xl col-start-2 row-start-1">
                     <video
                         className="rounded-3xl"
                         autoPlay
                         loop
+                        muted
                         style={{
                             // width: "700px",
                             height: "600px",
@@ -19,14 +20,14 @@ function AboutEngineer() {
                 </div>
 
                 <div
-                    className=" flex flex-col gap-3 px-4 pt-20 items-center justify-center lg:grid lg:grid-cols-2 lg:gap-0 md:mx-auto  border-2 rounded-3xl lg:max-w-3xl lg:pb-10 md:col-start-1 md:row-start-1"
+                    className="  gap-3 px-4 pt-10 items-center justify-center max-w-[340px] mx-auto sm:mx-0 grid grid-cols-2 lg:gap-0 md:mx-auto  border-2 rounded-3xl lg:max-w-3xl lg:pb-10 md:col-start-1 md:row-start-1"
                     data-aos="fade-left"
                 >
                     {/* <h1 className="text-3xl font-extrabold text-center lg:col-start-1 col-span-2">
                     Sobre o Engenheiro
                 </h1> */}
-                    <div className="lg:relative col-start-2">
-                        <div className="flex flex-col items-center justify-center lg:rounded-full lg:z-10 lg:absolute lg:top-[-210px]  lg:left-[-100px] lg:row-start-1">
+                    <div className="relative col-start-2">
+                        <div className="flex flex-col items-center justify-center rounded-full lg:z-10 absolute top-[-200px] sm:top-[-210px]  left-[-100px] row-start-1">
                             <Image
                                 className="rounded-full shadow-md"
                                 src={"/engLucas.jpg"}
@@ -37,7 +38,7 @@ function AboutEngineer() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-4 lg:col-span-2">
+                    <div className="flex flex-col gap-4 col-span-2">
                         <h2 className="text-2xl font-bold text-center ">
                             Eng. Lucas Marcelo de Deus <br />{" "}
                             <span className="text-lg font-normal">

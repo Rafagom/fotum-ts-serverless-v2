@@ -11,6 +11,7 @@ import { Hero } from "../components/Hero";
 import { Services } from "../components/Services";
 import { KnownBrands } from "../components/KnownBrands";
 import { Hero2 } from "../components/Hero2";
+import { MobileWelcome } from "../components/MobileWelcome";
 
 // import SolarDiagram from "../components/SolarDiagram";
 
@@ -23,11 +24,15 @@ const Home: NextPage = () => {
                 {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>
             <div className="flex flex-col relative w-full">
-                <div className="flex w-full items-center justify-center">
-                    <Header />
-                </div>
+                {/* <div className="flex w-full items-center justify-center"> */}
+                {/* <div className="flex w-full h-[12vh] bg-white"></div> */}
+                <Header />
+                {/* </div> */}
 
-                <div className="flex flex-col mt-20  ">
+                <div className="sm:hidden flex">
+                    <MobileWelcome />
+                </div>
+                <div className="flex flex-col mt-20">
                     <div className="relative">
                         <Hero />
                     </div>

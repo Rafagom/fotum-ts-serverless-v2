@@ -9,14 +9,14 @@ export function KnownBrands() {
     return (
         <div className="w-full bg-[#00324B] flex flex-col gap-10 py-6">
             <h1 className="text-white text-center text-3xl font-bold">
-                Trabalhamos com a melhores marcas
+                Trabalhamos com as melhores marcas
             </h1>
-            <div className="grid grid-cols-5 max-h-24">
+            <div className="grid grid-cols-3 sm:grid-cols-5 ">
                 <Carousel
                     infiniteLoop
                     autoPlay
-                    centerMode
-                    centerSlidePercentage={30}
+                    // centerMode
+                    // centerSlidePercentage={40}
                     showArrows={false}
                     showStatus={false}
                     showIndicators={false}
@@ -26,7 +26,7 @@ export function KnownBrands() {
                 >
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -34,7 +34,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -42,7 +42,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -50,7 +50,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -58,7 +58,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -69,7 +69,7 @@ export function KnownBrands() {
                     infiniteLoop
                     autoPlay
                     centerMode
-                    centerSlidePercentage={30}
+                    centerSlidePercentage={100}
                     showArrows={false}
                     showStatus={false}
                     showIndicators={false}
@@ -79,7 +79,7 @@ export function KnownBrands() {
                 >
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -87,7 +87,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -95,7 +95,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -103,7 +103,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -111,7 +111,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -121,8 +121,8 @@ export function KnownBrands() {
                 <Carousel
                     infiniteLoop
                     autoPlay
-                    centerMode
-                    centerSlidePercentage={30}
+                    // centerMode
+                    // centerSlidePercentage={30}
                     showArrows={false}
                     showStatus={false}
                     showIndicators={false}
@@ -132,7 +132,7 @@ export function KnownBrands() {
                 >
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -140,7 +140,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -148,7 +148,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -156,7 +156,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -164,7 +164,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -174,18 +174,19 @@ export function KnownBrands() {
                 <Carousel
                     infiniteLoop
                     autoPlay
-                    centerMode
-                    centerSlidePercentage={30}
+                    // centerMode
+                    // centerSlidePercentage={30}
                     showArrows={false}
                     showStatus={false}
                     showIndicators={false}
                     interval={1590}
                     axis="vertical"
                     showThumbs={false}
+                    className="hidden sm:block"
                 >
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -193,7 +194,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -201,7 +202,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -209,7 +210,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -217,7 +218,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -227,18 +228,19 @@ export function KnownBrands() {
                 <Carousel
                     infiniteLoop
                     autoPlay
-                    centerMode
-                    centerSlidePercentage={30}
+                    // centerMode
+                    // centerSlidePercentage={30}
                     showArrows={false}
                     showStatus={false}
                     showIndicators={false}
                     interval={3500}
                     axis="vertical"
                     showThumbs={false}
+                    className="hidden sm:block"
                 >
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -246,7 +248,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -254,7 +256,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -262,7 +264,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
@@ -270,7 +272,7 @@ export function KnownBrands() {
                     </div>
                     <div>
                         <Image
-                            height={72}
+                            height={80}
                             width={288}
                             src={weg}
                             alt="Logo WEG"
