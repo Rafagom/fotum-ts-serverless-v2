@@ -23,9 +23,8 @@ export function Header() {
 
     const navigation = [
         { name: "Início", href: "/" },
-        { name: "Geração Solar", href: "/solarGeneration" },
-        { name: "Instalações Elétricas", href: "#" },
-        { name: "Eficiência Energetica", href: "#" },
+        { name: "Energia Solar", href: "/solarGeneration" },
+        { name: "Serviços", href: "#" },
         { name: "Contato", href: "/contact" },
     ];
 

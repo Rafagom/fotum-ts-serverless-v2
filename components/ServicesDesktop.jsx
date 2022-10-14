@@ -38,18 +38,21 @@ function Features() {
             ></div>
             <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
-            <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:pb-16">
+            <div className="relative max-w-[1000px] mx-auto px-4 sm:px-6 lg:pb-16 xl:max-w-6xl">
                 <div className="pt-12 md:pt-20">
                     {/* Section header */}
                     <div
-                        className="max-w-3xl mx-auto text-center pb-12 md:pb-16"
+                        className="max-w-3xl mx-auto text-center pb-12 md:pb-16 "
                         data-aos="fade-right"
                     >
-                        <h1 className="text-4xl mb-4">Nossos Serviços</h1>
+                        <h1 className="text-4xl mb-4">
+                            Conheça nossos serviços
+                        </h1>
                         <p className="text-xl text-gray-600">
-                            Our team will work closely with you throughout the
-                            development process to ensure that your product is
-                            flawless. Checkout projects weve worked on recently:
+                            Temos a solução em engenharia elétrica que você
+                            precisa! Com excelência no atendimento e no
+                            acompanhamento de sua obra, proporcionamos a
+                            tranquilidade que você procura.
                         </p>
                     </div>
 
@@ -63,7 +66,7 @@ function Features() {
                             {/* Tabs buttons */}
                             <div className="mb-8 md:mb-0 grid grid-rows-3">
                                 <a
-                                    className={`grid grid-cols-[1fr,7fr] items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 gap-3 ${
+                                    className={`grid grid-cols-[1fr,7fr] items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 gap-3 max-w-md xl:max-w-full ${
                                         tab !== 1
                                             ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
                                             : "bg-gray-200 border-transparent"
@@ -84,16 +87,17 @@ function Features() {
                                     </div>
                                     <div>
                                         <div className="font-bold leading-snug tracking-tight mb-1">
-                                            Geração Solar Fotovoltaica
+                                            Energia Solar Fotovoltaica
                                         </div>
                                         <div className="text-gray-600">
-                                            Fully operational Casino built on
-                                            asdfasdfasdf top of Solana.
+                                            Invista em energia solar e economize
+                                            dinheiro gerando sua própria energia
+                                            elétrica.
                                         </div>
                                     </div>
                                 </a>
                                 <a
-                                    className={`grid grid-cols-[1fr,7fr] items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 gap-3 ${
+                                    className={`grid grid-cols-[1fr,7fr] items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 gap-3 max-w-md xl:max-w-full ${
                                         tab !== 2
                                             ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
                                             : "bg-gray-200 border-transparent"
@@ -117,18 +121,19 @@ function Features() {
 
                                     <div>
                                         <div className="font-bold leading-snug tracking-tight mb-1">
-                                            Instalações Elétricas
+                                            Projetos
                                         </div>
                                         <div className="text-gray-600">
-                                            Fluxus Finance is the first
-                                            NEAR-native yield aggregator,
-                                            auto-compounder, and yield
-                                            optimizer.
+                                            Projetos de instalações elétricas
+                                            residenciais, comerciais e prediais,
+                                            entradas de energia elétrica em
+                                            baixa e média tensão, SPDA
+                                            (para-raios) e bombeiros.
                                         </div>
                                     </div>
                                 </a>
                                 <a
-                                    className={`grid grid-cols-[1fr,7fr] items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 gap-3 ${
+                                    className={`grid grid-cols-[1fr,7fr] items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 gap-3 max-w-md xl:max-w-full ${
                                         tab !== 3
                                             ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
                                             : "bg-gray-200 border-transparent"
@@ -149,13 +154,14 @@ function Features() {
                                     </div>
                                     <div>
                                         <div className="font-bold leading-snug tracking-tight mb-1">
-                                            Eficiência energética
+                                            Instalações Elétricas
                                         </div>
                                         <div className="text-gray-600">
-                                            Fluxus Finance is the first
-                                            NEAR-native yield aggregator,
-                                            auto-compounder, and yield
-                                            optimizer.
+                                            Mão de obra qualificada para
+                                            execução de projetos elétricos e
+                                            luminotécnicos, entradas de energia,
+                                            infraestrutura, instalação de
+                                            lustres, motores e quadros.
                                         </div>
                                     </div>
                                 </a>

@@ -3,24 +3,27 @@ import Image from "next/image";
 
 export function Hero() {
     return (
-        <div className="flex flex-col gap-12  mb-5 max-w-[1400px] mx-auto sm:h-[60vh]">
-            <div className="md:grid md:grid-cols-2 md:gap-x-24 items-center justify-center h-full">
-                <div className="flex justify-center items-center md:col-start-2 w-full  rounded-l-3xl">
+        <div className="flex flex-col gap-12 mb-5 max-w-[1400px] mx-auto sm:h-[80vh] md:min-h-[500px] md:h-full items-center justify-center">
+            <div className="items-center justify-center h-full md:grid md:grid-cols-2 md:gap-x-24">
+                <div className="hidden justify-center items-center lg:grid lg:col-start-2 w-full rounded-l-3xl">
                     <div
-                        className="hidden sm:flex shadow-lg right-0 bottom-auto  rounded-l-3xl absolute"
+                        className="flex absolute shadow right-0 top-0 rounded-none lg:rounded-l-3xl"
                         data-aos="fade-left"
                     >
-                        <div className="opacity-40 bg-[#6b92a7] h-full w-full absolute z-10 rounded-l-3xl"></div>
-                        <Image
-                            className=" rounded-l-3xl"
-                            src={"/CME5.png"}
-                            // layout="fill"
-                            width={800}
-                            height={500}
-                            alt={"Geração residencial"}
-                        />
+                        <div className="absolute opacity-40 bg-[#6b92a7] h-full w-full z-10 rounded-none lg:rounded-l-3xl top-0 "></div>
+
+                        <div className="flex shadow right-0 top-0 rounded-l-3xl">
+                            <Image
+                                className="rounded-none lg:rounded-l-3xl"
+                                src={"/CME5.png"}
+                                width={800}
+                                height={500}
+                                alt={"Geração residencial"}
+                            />
+                        </div>
+
                         <div
-                            className="flex  absolute right-0 bottom-0 z-20"
+                            className="flex absolute right-0 bottom-0  z-10"
                             data-aos="fade-left"
                             data-aos-easing="linear"
                             data-aos-duration="1500"
@@ -34,26 +37,25 @@ export function Hero() {
                         </div>
                     </div>
                 </div>
-
                 <div
-                    className="flex flex-col justify-center items-center gap-6 md:row-start-1 md:gap-10 md:h-full "
+                    className=" flex flex-col  md:gap-10 md:h-full  justify-center items-center md:row-start-1"
                     data-aos="zoom-y-out"
                 >
-                    <h2 className="text-3xl font-bold text-center md:text-left md:text-5xl  ">
-                        Qualidade e Garantia <br /> Fótum Engenheria
-                    </h2>
-                    <p className="px-4 text-lg md:text-3xl md:px-0">
-                        Mais de 10 anos de experiência em serviços elétricos de
-                        excelência, oferecendo as melhores soluções em projetos,
-                        instalações e energia solar fotovoltaica.
+                    <p className="px-4 text-lg sm:text-3xl md:px-0">
+                        Equipe especializada e altamente capacitada, oferecemos
+                        segurança e garantia em todos os serviços prestados,
+                        atendendo a todas as normas técnicas e de segurança
+                        vigentes. Os nossos valores estão pautados na confiança,
+                        transparência e respeito.
                     </p>
 
-                    <div className="hidden  items-center justify-center py-6 px-4 gap-3 max-w-[1400px] sm:grid sm:grid-cols-2 md:text-2xl md:px-0 md:gap-6">
+                    <div className="hidden  items-center justify-center py-6 px-4 gap-3 max-w-[1400px] lg:grid lg:grid-cols-2 lg:text-2xl lg:px-0 lg:gap-6 z-30">
                         <Link href="# " className=" ">
-                            <a className="flex text-center items-center justify-center py-2  bg-[#00324b] text-[#ffaa00] font-bold rounded border-2 border-[#00324b] md:px-6">
+                            <a className="flex text-center items-center justify-center py-2  bg-[#00324b] text-[#ffaa00] font-bold rounded border-2 border-[#00324b] lg:px-6">
                                 Contato
                             </a>
                         </Link>
+
                         <Link href="#work-numbers" className="">
                             <a className=" items-start py-2 px-6 bg-[white] text-[#00324b] font-bold rounded border-2 border-transparent whitespace-nowrap hidden sm:flex">
                                 Saiba mais →

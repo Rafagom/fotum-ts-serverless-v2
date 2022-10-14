@@ -4,23 +4,9 @@ function AboutEngineer() {
     return (
         <>
             {/* About the engineer */}
-            <div className="flex sm:grid sm:grid-cols-[4fr,2fr] sm:max-w-full">
-                <div className="hidden sm:flex items-center place-self-start rounded-3xl col-start-2 row-start-1">
-                    <video
-                        className="rounded-3xl"
-                        autoPlay
-                        loop
-                        muted
-                        style={{
-                            // width: "700px",
-                            height: "600px",
-                        }}
-                        src="/VideoInsta1.mp4"
-                    ></video>
-                </div>
-
+            <div className="flex">
                 <div
-                    className="  gap-3 px-4 pt-10 items-center justify-center max-w-[340px] mx-auto sm:mx-0 grid grid-cols-2 lg:gap-0 md:mx-auto  border-2 rounded-3xl lg:max-w-3xl lg:pb-10 md:col-start-1 md:row-start-1"
+                    className="  gap-3 px-4 pt-10 pb-6 items-center justify-center max-w-[340px] mx-auto sm:mx-0 grid grid-cols-2 lg:gap-0 md:mx-auto  border-2 rounded-3xl lg:max-w-lg lg:pb-10 md:col-start-1 md:row-start-1"
                     data-aos="fade-left"
                 >
                     {/* <h1 className="text-3xl font-extrabold text-center lg:col-start-1 col-span-2">
@@ -42,23 +28,42 @@ function AboutEngineer() {
                         <h2 className="text-2xl font-bold text-center ">
                             Eng. Lucas Marcelo de Deus <br />{" "}
                             <span className="text-lg font-normal">
-                                CREA: 123456
+                                CREA: 184.434-3
                             </span>
                         </h2>
-                        <p className="text-justify text-xl px-6">
-                            Formado em Engenharia Elétrica pela Universidade
-                            Federal de Santa Catarina – UFSC, com enfoque em
-                            sistemas de energia e energia solar fotovoltaica,
-                            atua com projetos elétricos e instalações
-                            residenciais, comerciais e prediais há mais de 10
-                            anos. Além da experiência com energias renováveis,
-                            também foi encarregado pela a medição e
-                            contabilização de energia em usinas de todo o
-                            Brasil, sendo responsável pelas questões
-                            regulatórias junto à Câmara de Comercialização de
-                            Energia Elétrica – CCEE e Operador Nacional do
-                            Sistema Elétrico – ONS.
-                        </p>
+                        <div className="flex flex-col gap-3 text-center  text-xl px-6">
+                            <p>
+                                Formado em Engenharia Elétrica pela Universidade
+                                Federal de Santa Catarina – UFSC, com enfoque em
+                                sistemas de energia e energia solar
+                                fotovoltaica, atua com projetos elétricos e
+                                instalações residenciais, comerciais e prediais
+                                há mais de 10 anos.
+                            </p>
+
+                            <p>
+                                Além da experiência com energias renováveis,
+                                também foi encarregado pela a medição e
+                                contabilização de energia em usinas de todo o
+                                Brasil, sendo responsável pelas questões
+                                regulatórias junto à Câmara de Comercialização
+                                de Energia Elétrica – CCEE e Operador Nacional
+                                do Sistema Elétrico – ONS.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="flex items-center justify-center col-span-2 mt-4">
+                        <a
+                            href="https://wa.me/message/2KTISK2P7CG6E1"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="flex flex-col gap-4 mt-6"
+                        >
+                            <div className="flex items-center justify-center bg-green-500 font-bold py-3 px-6 rounded-3xl text-lg hover:bg-green-200 w-fit ">
+                                Falar com o especialista
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

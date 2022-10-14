@@ -4,7 +4,7 @@ import AnimatedNumber from "react-animated-number";
 function WorkNumbers() {
     return (
         <div id="work-numbers" className="">
-            <div className="work-numbers flex flex-col gap-6  text-[#00324b] px-10 py-8  lg:grid lg:grid-cols-3 lg:max-w-[1400px] lg:mx-auto">
+            <div className="work-numbers flex flex-col gap-6  text-[#00324b] px-10 pt-20 pb-10 lg:grid lg:grid-cols-3 lg:max-w-[1400px] lg:mx-auto z-[100]">
                 <div className="flex flex-col items-center justify-center border-2 border-[#00324b] rounded-3xl p-2">
                     <AnimatedNumber
                         style={{
@@ -40,7 +40,9 @@ function WorkNumbers() {
                             `${n.toLocaleString("pt-BR")} Mwh`
                         }
                     />
-                    <p className="text-2xl text-[#00324b]">Energia Gerada</p>
+                    <p className="text-2xl text-[#00324b]">
+                        Energia Diaria Gerada
+                    </p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center border-2 border-[#00324b] rounded-3xl p-2">

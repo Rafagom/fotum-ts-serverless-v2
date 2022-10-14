@@ -25,7 +25,7 @@ export function Services() {
                                 height={24}
                             />
                             <p className="text-left">
-                                Geração Solar Fotovoltaica
+                                Energia Solar Fotovoltaica
                             </p>
                             <CaretUp
                                 size={20}

@@ -18,7 +18,7 @@ export function MobileWelcome() {
             </div>
 
             <a
-                href="#resultados"
+                href="#hero"
                 className="absolute flex flex-col gap-2 justify-center items-center font-bold uppercase text-center text-xl z-20 bottom-[12vh] "
             >
                 <p className="text-white">Saiba mais</p>

@@ -24,6 +24,13 @@ body {
     -webkit-animation: bounce 1.5s infinite alternate;
 }
 
+@media (min-width: 640px) and (max-width: 1024px) {
+    .bg-hero {
+        background: url("/CME5.png") no-repeat left bottom;
+        background-size: cover;
+    }
+}
+
 @keyframes bounce {
     from {
         transform: translateY(10px);

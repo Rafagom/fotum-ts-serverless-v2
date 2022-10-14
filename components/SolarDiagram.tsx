@@ -99,7 +99,7 @@ function SolarDiagram() {
     }, [order]);
 
     return (
-        <div className="bg-white">
+        <div className="bg-white pb-10">
             <div className="flex flex-col p-4 gap-6  lg:max-w-[800px] lg:mx-auto">
                 <h1 className="text-2xl font-bold">Como Funciona:</h1>
                 <div className="grid grid-cols-2 gap-5  text-[#00324b] justify-center md:grid-cols-2  md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-12">
@@ -109,7 +109,7 @@ function SolarDiagram() {
                             className="relative grid grid-rows-2 border border-[#00324b] rounded-2xl  py-3 px-2  gap-3 text-center   place-items-center lg:grid-rows-[2fr,3fr]   lg:py-6 lg:px-4"
                             animate={stage.start == order ? animation : ""}
                             transition={{
-                                duration: 2,
+                                duration: 1,
                                 repeat: 1,
                                 repeatType: "reverse",
                             }}
