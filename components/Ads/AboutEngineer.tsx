@@ -6,12 +6,9 @@ function AboutEngineer() {
             {/* About the engineer */}
             <div className="flex">
                 <div
-                    className="  gap-3 px-4 pt-10 pb-6 items-center justify-center max-w-[340px] mx-auto sm:mx-0 grid grid-cols-2 lg:gap-0 md:mx-auto  border-2 rounded-3xl lg:max-w-lg lg:pb-10 md:col-start-1 md:row-start-1"
+                    className="  gap-3 px-4 pt-10 pb-6 items-center justify-center max-w-[340px] grid grid-cols-2 lg:gap-0 mx-auto border-2 rounded-3xl lg:max-w-lg lg:pb-10 md:col-start-1 md:row-start-1"
                     data-aos="fade-left"
                 >
-                    {/* <h1 className="text-3xl font-extrabold text-center lg:col-start-1 col-span-2">
-                    Sobre o Engenheiro
-                </h1> */}
                     <div className="relative col-start-2">
                         <div className="flex flex-col items-center justify-center rounded-full lg:z-10 absolute top-[-200px] sm:top-[-210px]  left-[-100px] row-start-1">
                             <Image
@@ -26,7 +23,7 @@ function AboutEngineer() {
 
                     <div className="flex flex-col gap-4 col-span-2">
                         <h2 className="text-2xl font-bold text-center ">
-                            Eng. Lucas Marcelo de Deus <br />{" "}
+                            Téc. Lucas Marcelo de Deus <br />{" "}
                             <span className="text-lg font-normal">
                                 CREA: 184.434-3
                             </span>

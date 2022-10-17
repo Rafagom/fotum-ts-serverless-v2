@@ -4,7 +4,10 @@ import AnimatedNumber from "react-animated-number";
 function WorkNumbers() {
     return (
         <div id="work-numbers" className="">
-            <div className="work-numbers flex flex-col gap-6  text-[#00324b] px-10 pt-20 pb-10 lg:grid lg:grid-cols-3 lg:max-w-[1400px] lg:mx-auto z-[100]">
+            <div
+                className="work-numbers flex flex-col gap-6  text-[#00324b] px-10 pb-10 lg:grid lg:grid-cols-3 lg:max-w-[1400px] lg:mx-auto z-[100]"
+                data-aos="fade-right"
+            >
                 <div className="flex flex-col items-center justify-center border-2 border-[#00324b] rounded-3xl p-2">
                     <AnimatedNumber
                         style={{
@@ -35,13 +38,13 @@ function WorkNumbers() {
                         }}
                         duration={3000}
                         stepPrecision={0}
-                        value={7200}
+                        value={245}
                         formatValue={(n: number) =>
-                            `${n.toLocaleString("pt-BR")} Mwh`
+                            `+${n.toLocaleString("pt-BR")} Mwh`
                         }
                     />
                     <p className="text-2xl text-[#00324b]">
-                        Energia Diaria Gerada
+                        Gerados anualmente
                     </p>
                 </div>
 
@@ -55,9 +58,9 @@ function WorkNumbers() {
                         }}
                         duration={3000}
                         stepPrecision={0}
-                        value={6984000}
+                        value={180}
                         formatValue={(n: number) =>
-                            `R$ ${n.toLocaleString("pt-BR")}`
+                            `+ R$ ${n.toLocaleString("pt-BR")} mil`
                         }
                     />
                     <p className="text-2xl text-[#00324b]">Economizados</p>

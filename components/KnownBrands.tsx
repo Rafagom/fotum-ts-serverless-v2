@@ -1,6 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-import weg from "../public/weg.svg";
+import logo0 from "../public/logo0.svg";
+import logo1 from "../public/logo1.svg";
+import logo2 from "../public/logo2.svg";
+import logo3 from "../public/logo3.svg";
+import logo4 from "../public/logo4.svg";
+import logo5 from "../public/logo5.svg";
+import logo6 from "../public/logo6.svg";
+import logo7 from "../public/logo7.svg";
+import logo8 from "../public/logo8.svg";
+import logo9 from "../public/logo9.svg";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -28,40 +37,40 @@ export function KnownBrands() {
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo0}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo1}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo2}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo3}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo4}
+                            alt="Logo Parceiro"
                         />
                     </div>
                 </Carousel>
@@ -81,40 +90,40 @@ export function KnownBrands() {
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo5}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo6}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo7}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo8}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo9}
+                            alt="Logo Parceiro"
                         />
                     </div>
                 </Carousel>
@@ -134,40 +143,40 @@ export function KnownBrands() {
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo9}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo8}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo7}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo6}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo5}
+                            alt="Logo Parceiro"
                         />
                     </div>
                 </Carousel>
@@ -188,40 +197,40 @@ export function KnownBrands() {
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo4}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo3}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo2}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo1}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo0}
+                            alt="Logo Parceiro"
                         />
                     </div>
                 </Carousel>
@@ -242,40 +251,40 @@ export function KnownBrands() {
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo1}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo3}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo5}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo7}
+                            alt="Logo Parceiro"
                         />
                     </div>
                     <div>
                         <Image
                             height={80}
                             width={288}
-                            src={weg}
-                            alt="Logo WEG"
+                            src={logo2}
+                            alt="Logo Parceiro"
                         />
                     </div>
                 </Carousel>

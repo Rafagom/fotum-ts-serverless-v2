@@ -5,12 +5,6 @@ import engLucas from "../public/engLucas.jpg";
 import sandro from "../public/Sandro.jpeg";
 
 import Image from "next/image";
-// import Oakbet from "../images/oakbet.jpeg";
-// import Fluxus from "../images/fluxus.jpeg";
-// import SolanaIcon from "../images/solanaLogoMark.svg";
-// import NearIcon from "../images/icon_nm.svg";
-
-// import FeaturesElement from "../images/features-element.png";
 
 function Features() {
     const [tab, setTab] = useState(1);
@@ -187,15 +181,16 @@ function Features() {
                                     leaveStart="opacity-100 translate-y-0"
                                     leaveEnd="opacity-0 -translate-y-16"
                                 >
-                                    <div className="relative inline-flex flex-col shadow-lg">
-                                        <Image
-                                            height={360}
-                                            width={600}
-                                            src={sandro}
-                                            alt="Features bg"
-                                        />
-
-                                        <div className="absolute bg-white  bottom-[-40px] right-[-40px] py-6 px-6 z-20 flex flex-col items-center justify-center shadow-lg border border-[#00324b]">
+                                    <div className="relative inline-flex flex-col shadow-lg w-full">
+                                        <div className="hidden lg:flex">
+                                            <Image
+                                                height={360}
+                                                width={600}
+                                                src={sandro}
+                                                alt="Features bg"
+                                            />
+                                        </div>
+                                        <div className="w-full lg:w-fit lg:absolute bg-white  bottom-[-60px] right-0 xl:right-[-40px] py-6 px-6 z-20 flex flex-col items-center justify-center shadow-lg border border-[#00324b]">
                                             <ul className="flex flex-col  gap-5 text-left">
                                                 <li>&#x2713; Projeto</li>
                                                 <li>&#x2713; Homologação</li>
@@ -219,15 +214,16 @@ function Features() {
                                     leaveStart="opacity-100 translate-y-0"
                                     leaveEnd="opacity-0 -translate-y-16"
                                 >
-                                    <div className="relative inline-flex flex-col shadow-lg">
-                                        <Image
-                                            height={360}
-                                            width={600}
-                                            src={sandro}
-                                            alt="Features bg"
-                                        />
-
-                                        <div className="absolute bg-white  bottom-[-40px] right-[-40px] py-6 px-6 z-20 flex flex-col items-center justify-center shadow-lg border border-[#00324b]">
+                                    <div className="relative inline-flex flex-col shadow-lg w-full">
+                                        <div className="hidden lg:flex">
+                                            <Image
+                                                height={360}
+                                                width={600}
+                                                src={sandro}
+                                                alt="Features bg"
+                                            />
+                                        </div>
+                                        <div className="w-full lg:w-fit lg:absolute bg-white  bottom-[-60px] right-0 xl:right-[-40px] py-6 px-6 z-20 flex flex-col items-center justify-center shadow-lg border border-[#00324b] ">
                                             <ul className="flex flex-col  gap-5 text-left">
                                                 <li>
                                                     &#x2713; Projetos e
@@ -260,15 +256,17 @@ function Features() {
                                     leaveStart="opacity-100 translate-y-0"
                                     leaveEnd="opacity-0 -translate-y-16"
                                 >
-                                    <div className="relative inline-flex flex-col shadow-lg">
-                                        <Image
-                                            height={360}
-                                            width={600}
-                                            src={sandro}
-                                            alt="Features bg"
-                                        />
+                                    <div className="relative inline-flex flex-col shadow-lg w-full">
+                                        <div className="hidden lg:flex">
+                                            <Image
+                                                height={360}
+                                                width={600}
+                                                src={sandro}
+                                                alt="Features bg"
+                                            />
+                                        </div>
 
-                                        <div className="absolute bg-white  bottom-[-40px] right-[-40px] py-6 px-3 z-20 flex flex-col items-center justify-center shadow-lg border border-[#00324b]">
+                                        <div className="w-full lg:w-fit lg:absolute bg-white  bottom-[-60px] right-0 xl:right-[-40px] py-6 px-3 z-20 flex flex-col items-center justify-center shadow-lg border border-[#00324b]">
                                             <ul className="flex flex-col  gap-5 text-left">
                                                 <li>
                                                     &#x2713; Análises de

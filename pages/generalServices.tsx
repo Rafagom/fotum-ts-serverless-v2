@@ -2,12 +2,12 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { WhatsappLogo } from "phosphor-react";
 import About from "../components/Ads/AboutEngineer";
+import GeneralAdvantages from "../components/Ads/GeneralAdvantages";
 import Advantages from "../components/Ads/SolarAdvantages";
 import WorkNumbers from "../components/Ads/WorkNumbers";
 import { Footer } from "../components/Footer";
-// import { ContactForm } from "../components/Form";
+import GeneralServicesDiagram from "../components/GeneralServicesDiagram";
 import { Header } from "../components/Header";
-import SolarDiagram from "../components/SolarDiagram";
 
 const SolarGeneration: NextPage = () => {
     return (
@@ -35,15 +35,15 @@ const SolarGeneration: NextPage = () => {
                                 Fale com nosso
                             </p>
                             <h2 className="text-3xl md:text-5xl font-extrabold lg:text-7xl">
-                                Engenheiro especialista em <br />
+                                Técnico especialista em <br />
                                 <span className="text-[#ffaa00]">
-                                    Energia Solar.
+                                    projetos e instalações elétricas.
                                 </span>
                             </h2>
                             <p className="text-xl md:text-2xl max-w-[40ch]">
-                                Receba agora um atendimento personalizado do
-                                nosso engenheiro que atende a instalações de
-                                Energia Solar todos os dias!
+                                Receba agora seu atendimento personalizado do
+                                nosso técnico que atende serviços elétricos
+                                todos os dias!
                             </p>
                         </div>
 
@@ -83,9 +83,9 @@ const SolarGeneration: NextPage = () => {
                     </a>
                 </div>
             </div>
-            <SolarDiagram />
+            <GeneralServicesDiagram />
             <WorkNumbers />
-            <Advantages />
+            <GeneralAdvantages />
             <div className="pt-48 pb-10">
                 <About />
             </div>

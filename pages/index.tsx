@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import AboutEngineer from "../components/Ads/AboutEngineer";
-import Advantages from "../components/Ads/Advantages";
+import Advantages from "../components/Ads/SolarAdvantages";
 import WorkNumbers from "../components/Ads/WorkNumbers";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
@@ -34,11 +34,13 @@ const Home: NextPage = () => {
                 </div>
 
                 <div className="flex flex-col mt-20">
-                    <div className="relative ">
-                        <Hero />
-                    </div>
-                    <div className="relative">
-                        <Hero2 />
+                    <div className="md:grid md:grid-rows-2  ">
+                        <div className="relative ">
+                            <Hero />
+                        </div>
+                        <div className="relative">
+                            <Hero2 />
+                        </div>
                     </div>
 
                     <div className="hidden md:block">
