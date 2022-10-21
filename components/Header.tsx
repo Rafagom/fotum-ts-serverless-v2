@@ -22,10 +22,14 @@ export function Header() {
     }, [top]);
 
     const navigation = [
-        { name: "Início", href: "/" },
-        { name: "Energia Solar", href: "/solarGeneration" },
-        { name: "Serviços", href: "#" },
-        { name: "Contato", href: "/contact" },
+        { name: "Início", href: "/", as: "/" },
+        {
+            name: "Energia Solar",
+            href: "/solarGeneration",
+            as: "energia-solar",
+        },
+        { name: "Serviços", href: "generalServices", as: "servicos-gerais" },
+        { name: "Contato", href: "/contact", as: "contato" },
     ];
 
     return (
@@ -64,13 +68,14 @@ export function Header() {
                             </div>
                             <div className="hidden md:flex md:ml-10 md:pr-0 md:space-x-8 md:items-center md:justify-end md:w-full">
                                 {navigation.map((item) => (
-                                    <a
+                                    <Link
                                         key={item.name}
                                         className="border-b border-transparent hover:border-black"
                                         href={item.href}
+                                        as={item.as}
                                     >
                                         {item.name}
-                                    </a>
+                                    </Link>
                                 ))}
                                 <div className="flex items-center gap-6">
                                     <a
@@ -131,12 +136,15 @@ export function Header() {
                                 </div>
                                 <div className="flex flex-col px-8 pt-2 pb-2 space-y-1 items-center gap-2 ">
                                     {navigation.map((item) => (
-                                        <Popover.Button
+                                        <Link
                                             key={item.name}
-                                            className=" text-center py-4 rounded-md text-base font-bold  hover:text-gray-900 hover:bg-gray-500 w-full"
+                                            href={item.href}
+                                            as={item.as}
                                         >
-                                            <a href={item.href}>{item.name}</a>
-                                        </Popover.Button>
+                                            <Popover.Button className=" text-center py-4 rounded-md text-base font-bold  hover:text-gray-900 hover:bg-gray-500 w-full">
+                                                {item.name}
+                                            </Popover.Button>
+                                        </Link>
                                     ))}
                                     <a
                                         href="https://www.instagram.com/fotumengenharia/"

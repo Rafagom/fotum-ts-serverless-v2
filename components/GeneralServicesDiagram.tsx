@@ -7,17 +7,25 @@ import {
     useAnimation,
 } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import {
+    Plug,
+    NotePencil,
+    ListChecks,
+    Lightning,
+    Lightbulb,
+    HouseLine,
+} from "phosphor-react";
 
 const solarFlux: {
     name: string;
-    pathStart: string;
+    icon: any;
     pathEnd: string;
     text: string;
     start: number;
 }[] = [
     {
         name: "Projeto elétricos",
-        pathStart: "/sol.png",
+        icon: <NotePencil size={64} />,
         pathEnd: "/solEnd.png",
         start: 0,
 
@@ -25,7 +33,7 @@ const solarFlux: {
     },
     {
         name: "Instalações elétricas",
-        pathStart: "/solarPanel.png",
+        icon: <Plug size={64} />,
         pathEnd: "solarPanelEnd.png",
         start: 1,
 
@@ -33,7 +41,7 @@ const solarFlux: {
     },
     {
         name: "Execução de projetos",
-        pathStart: "/gerador.png",
+        icon: <ListChecks size={64} />,
         pathEnd: "/geradorEnd.png",
         start: 2,
 
@@ -41,7 +49,7 @@ const solarFlux: {
     },
     {
         name: "Poste CELESC",
-        pathStart: "/cozinha.png",
+        icon: <Lightning size={64} />,
         pathEnd: "/cozinhaEnd.png",
         start: 3,
 
@@ -49,7 +57,7 @@ const solarFlux: {
     },
     {
         name: "Entradas de energia CELESC",
-        pathStart: "/sustentabilidade.png",
+        icon: <Lightbulb size={64} />,
         pathEnd: "/sustentabilidadeEnd.png",
         start: 4,
 
@@ -57,7 +65,7 @@ const solarFlux: {
     },
     {
         name: "Reformas e novas instalações",
-        pathStart: "/investir.png",
+        icon: <HouseLine size={64} />,
         pathEnd: "/investirEnd.png",
         start: 5,
 
@@ -124,12 +132,8 @@ function GeneralServicesDiagram() {
                             <div className="absolute top-2 left-2">
                                 {stage.start + 1}
                             </div>
-                            <div className="h-20 w-20 relative before ">
-                                <Image
-                                    src={stage.pathStart}
-                                    alt={stage.name}
-                                    layout="fill"
-                                ></Image>
+                            <div className="h-20 w-20 relative before flex items-center justify-center">
+                                {stage.icon}
                             </div>
                             <p className=" font-medium">{stage.text}</p>
                         </motion.div>

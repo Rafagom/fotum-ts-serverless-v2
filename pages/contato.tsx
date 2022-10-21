@@ -6,9 +6,12 @@ import { Header } from "../components/Header";
 const Contact: NextPage = () => {
     return (
         <>
-            <Header />
-            <ContactForm />
-            <Footer />
+            <div className="flex flex-col pt-20 h-[100vh] justify-between">
+                <Header />
+                <ContactForm />
+
+                <Footer />
+            </div>
         </>
     );
 };
