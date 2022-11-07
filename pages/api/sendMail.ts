@@ -18,7 +18,8 @@ export default async (request: NextApiRequest, response: NextApiResponse) => {
     const { email, username, subject, cost, message } = request.body;
 
     const msg = {
-        to: "contato@fotumengenharia.com.br",
+        // to: "contato@fotumengenharia.com.br",
+        to: "engrsgomes@gmail.com",
         from: "rafox.gomes@gmail.com",
         subject: `Novo contato: ${username}`,
         text: `Email: ${email}\n\nNome: ${username}\n\nAssunto: ${subject}\n\nFatura: ${cost}\n\nMensagem: ${message}`,
