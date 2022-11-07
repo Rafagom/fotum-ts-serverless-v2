@@ -70,7 +70,7 @@ export default function SolarAdvantages() {
                     className="flex flex-col gap-4 mt-6"
                 >
                     <div className="flex items-center justify-center bg-green-500 font-bold py-3 px-6 rounded-3xl text-lg hover:bg-green-200">
-                        Falar com o engenheiro agora!
+                        Falar com o Técnico agora!
                     </div>
                 </a>
             </div>

@@ -34,7 +34,7 @@ export function Hero2() {
                     </p>
 
                     <div className=" grid-cols-1 gap-6 px-4  max-w-[1400px] lg:text-2xl hidden md:grid">
-                        <Link href="#work-numbers">
+                        <Link href="#servicos">
                             <a className="items-start py-2 px-6 bg-[white] text-[#00324b] font-bold rounded border-2 border-transparent whitespace-nowrap hidden sm:flex">
                                 Saiba mais →
                             </a>

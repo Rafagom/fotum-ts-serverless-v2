@@ -35,14 +35,14 @@ const SolarGeneration: NextPage = () => {
                                 Fale com nosso
                             </p>
                             <h2 className="text-3xl md:text-5xl font-extrabold lg:text-7xl">
-                                Engenheiro especialista em <br />
+                                Técnico especialista em <br />
                                 <span className="text-[#ffaa00]">
                                     Energia Solar.
                                 </span>
                             </h2>
                             <p className="text-xl md:text-2xl max-w-[40ch]">
                                 Receba agora um atendimento personalizado do
-                                nosso engenheiro que atende a instalações de
+                                nosso técnico que atende a instalações de
                                 Energia Solar todos os dias!
                             </p>
                         </div>
@@ -56,7 +56,7 @@ const SolarGeneration: NextPage = () => {
                                     className="flex items-center gap-2 justify-center bg-green-500 font-bold py-3 px-6 rounded-3xl md:text-lg hover:bg-green-200 w-fit"
                                 >
                                     <WhatsappLogo size={28} />
-                                    <p>Falar com o engenheiro</p>
+                                    <p>Falar com o técnico</p>
                                 </a>
                                 <a
                                     href="tel:48984110903"

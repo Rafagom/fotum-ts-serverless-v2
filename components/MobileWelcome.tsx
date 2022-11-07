@@ -27,32 +27,6 @@ export function MobileWelcome() {
                 <div className="chevron before:bg-white after:bg-white"></div>
                 <div className="chevron before:bg-white after:bg-white"></div>
             </a>
-            {/* <div className="flex flex-col items-center place-self-start  col-start-2 row-start-1 relative h-[90vh]">
-                <div className="absolute  bottom-0 w-full h-[48vh] mobile-welcome-gradient rounded-b-3xl"></div>
-                <div className="absolute bottom-0 bg-[#00324b] h-[88vh] w-full z-20 opacity-20 rounded-b-3xl"></div>
-                <a
-                    href="#resultados"
-                    className="absolute flex flex-col gap-2 justify-center items-center font-bold uppercase text-center text-xl z-30 bottom-[10vh] "
-                >
-                    <p className="text-white">Saiba mais</p>
-                    <div className="chevron before:bg-white after:bg-white"></div>
-                    <div className="chevron before:bg-white after:bg-white"></div>
-                    <div className="chevron before:bg-white after:bg-white"></div>
-                </a>
-                <video
-                    className=" rounded-b-3xl w-[100vw] max-h-[90vh] "
-                    autoPlay
-                    loop
-                    muted
-                    style={
-                        {
-                            // width: "700px",
-                            // height: "700px",
-                        }
-                    }
-                    src="/VideoInsta1.mp4"
-                ></video>
-            </div> */}
         </div>
     );
 }

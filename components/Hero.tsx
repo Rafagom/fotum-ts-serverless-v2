@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export function Hero() {
     return (
-        <div className="flex flex-col gap-12 mb-5  mx-auto  md:min-h-[500px] md:h-full items-center justify-center px-6 ">
+        <div
+            id="hero"
+            className="flex flex-col gap-12 mb-5  mx-auto  md:min-h-[500px] md:h-full items-center justify-center px-6 "
+        >
             <div className="items-center justify-center h-full  md:grid md:grid-cols-2 md:gap-x-16 xl:gap-x-24 w-full">
                 <div className="hidden justify-center items-center rounded-3xl mb-5 sm:flex md:hidden ">
                     <Image
@@ -60,12 +63,17 @@ export function Hero() {
 
                     <div className="hidden  items-center justify-center py-6 px-4 gap-3 max-w-[1400px] md:grid md:grid-cols-2 lg:text-2xl lg:px-0 lg:gap-6 z-30">
                         <Link href="# " className=" ">
-                            <a className="flex text-center items-center justify-center py-2  bg-[#00324b] text-[#ffaa00] font-bold rounded border-2 border-[#00324b] lg:px-6">
+                            <a
+                                href="https://api.whatsapp.com/message/2KTISK2P7CG6E1?autoload=1&app_absent=0"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="flex text-center items-center justify-center py-2  bg-[#00324b] text-[#ffaa00] font-bold rounded border-2 border-[#00324b] lg:px-6"
+                            >
                                 Contato
                             </a>
                         </Link>
 
-                        <Link href="#work-numbers" className="">
+                        <Link href="#servicos" className="">
                             <a className=" items-start py-2 px-6 bg-[white] text-[#00324b] font-bold rounded border-2 border-transparent whitespace-nowrap hidden sm:flex">
                                 Saiba mais →
                             </a>

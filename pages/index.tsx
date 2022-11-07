@@ -33,7 +33,7 @@ const Home: NextPage = () => {
                     <MobileWelcome />
                 </div>
 
-                <div className="flex flex-col mt-20">
+                <div className="flex flex-col mt-20 gap-24">
                     <div className="md:grid md:grid-rows-2  ">
                         <div className="relative ">
                             <Hero />

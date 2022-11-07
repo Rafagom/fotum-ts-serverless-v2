@@ -7,7 +7,10 @@ import Link from "next/link";
 
 export function Services() {
     return (
-        <div className="flex flex-col gap-3 px-4 mt-4 mb-16 max-w-[1400px] md:mx-auto md:px-0 ">
+        <div
+            id="servicos"
+            className="flex flex-col gap-3 px-4 mt-4 mb-16 max-w-[1400px] md:mx-auto md:px-0 "
+        >
             <h2 className="text-[#ffaa00] font-medium">NOSSOS SERVIÇOS</h2>
             <p>
                 Impulsionamos a transição para sistemas de energia mais
