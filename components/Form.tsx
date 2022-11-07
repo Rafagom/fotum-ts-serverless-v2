@@ -222,6 +222,14 @@ export function ContactForm() {
                             <button
                                 className="flex  rounded bg-[#00324b] text-[#ffaa00] font-semibold   px-5 py-2  mt-5 justify-center items-center hover:bg-[#174d68] transition-colors disabled:opacity-50 disabled:hover:bg-[#00324b] min-w-[18ch]"
                                 type="submit"
+                                disabled={
+                                    formik.values != undefined
+                                        ? !!formik.values.username &&
+                                          !!formik.values.email
+                                            ? false
+                                            : true
+                                        : false
+                                }
                             >
                                 {isSubmit ? (
                                     <Loading />
