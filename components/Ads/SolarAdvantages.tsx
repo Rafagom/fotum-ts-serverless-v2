@@ -36,33 +36,6 @@ export default function SolarAdvantages() {
                     </div>
                 </div>
 
-                {/* <div className="md:grid  grid-cols-2 justify-end hidden   gap-5  text-[#ffaa00] mt-6">
-                <div className="grid grid-cols-[2fr,8fr] px-8 py-4  gap-4 items-center justify-start bg-[#00324b] rounded-full">
-                    <HouseLine size={72} weight="thin" />
-                    <p>
-                        Valorização do imóvel e rápido retorno de investimento
-                    </p>
-                </div>
-                <div className="grid grid-cols-[2fr,8fr] px-8 py-2 gap-4 items-center justify-start bg-[#00324b] rounded-full">
-                    <Medal size={72} weight="thin" />
-                    <p>
-                        Tecnologia de microinversores com até 25 anos de
-                        garantia
-                    </p>
-                </div>
-                <div className="grid grid-cols-[2fr,8fr] px-8 py-2 gap-4 items-center justify-start bg-[#00324b] rounded-full">
-                    <Lightbulb size={72} weight="thin" />
-                    <p className="w-[16ch]">
-                        Até 95% <br />
-                        de economia na conta de energia{" "}
-                    </p>
-                </div>
-                <div className="grid grid-cols-[2fr,8fr] px-8 py-2 gap-4 items-center justify-start bg-[#00324b] rounded-full">
-                    <CurrencyCircleDollar size={72} weight="thin" />
-
-                    <p className="w-[16ch]">Parcele em até 72x, sem entrada</p>
-                </div>
-            </div> */}
                 <a
                     href="https://wa.me/message/2KTISK2P7CG6E1"
                     target="_blank"

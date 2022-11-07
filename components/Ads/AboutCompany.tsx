@@ -12,7 +12,6 @@ function AboutCompany() {
 
                 <div className="flex items-center justify-center">
                     <Image
-                        // className=" rounded-full"
                         src={"/logo.png"}
                         width={320}
                         height={120}

@@ -1,5 +1,3 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faSolarPanel } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { CaretUp } from "phosphor-react";

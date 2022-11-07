@@ -1,9 +1,6 @@
 import { CloseButton } from "../Buttons/CloseButton";
-import { InstagramLogo, WhatsappLogo } from "phosphor-react";
 import Image from "next/image";
 import { optionType } from "../";
-// import PowerCalculatorModal from "../../../PowerCalculator/PowerCalculatorModal";
-// import { useState } from "react";
 
 interface FormStartProps {
     formOptions: Array<{

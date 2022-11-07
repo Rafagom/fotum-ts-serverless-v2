@@ -15,8 +15,6 @@ export function Hero2() {
                             className=" rounded-r-3xl"
                             src={"/Sandro.jpeg"}
                             layout="fill"
-                            // width={800}
-                            // height={500}
                             alt={"Geração residencial"}
                         />
                     </div>

@@ -10,12 +10,6 @@ export default function PowerCalculatorModal({
     isOpen,
     onClose,
 }: PowerCalculatorModalProps) {
-    // [isOpen, setIsOpen] = useState(true);
-
-    // function openModal() {
-    //     setIsOpen(true);
-    // }
-
     return (
         <>
             <Transition appear show={isOpen} as={Fragment}>
@@ -50,7 +44,6 @@ export default function PowerCalculatorModal({
                                     >
                                         Dimensionador de Sistemas Fotovoltaicos
                                     </Dialog.Title>
-                                    {/* <VerifyBotSetupForm /> */}
                                 </Dialog.Panel>
                             </Transition.Child>
                         </div>

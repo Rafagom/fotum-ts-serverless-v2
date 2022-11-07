@@ -74,35 +74,24 @@ const solarFlux: {
 ];
 
 function GeneralServicesDiagram() {
-    // const time = useTime();
     const animation = useAnimation();
-    // const i = useRef(0);
     const [order, setOrder] = useState(0);
     const [animationStart, setAnimationStart] = useState(false);
 
     async function sequence() {
-        // console.log("Index: ", index);
-
         await animation.start({
             y: -20,
             scale: 1.1,
             backgroundColor: "#ffaa00",
         });
-        // await animation.start({ y: 0, scale: 1 });
-        // animation.stop();
         setOrder(order + 1);
-
-        // console.log("entrou");
     }
 
     useEffect(() => {
-        // console.log("ORDER: ", order);
         if (!(order <= 5)) {
             setOrder(0);
         } else {
-            // if (animationStart) {
             sequence();
-            // }
         }
     }, [order]);
 
@@ -126,7 +115,6 @@ function GeneralServicesDiagram() {
                                     sequence();
                                     setAnimationStart(true);
                                 }
-                                // setAnimationStart(false)
                             }}
                         >
                             <div className="absolute top-2 left-2">

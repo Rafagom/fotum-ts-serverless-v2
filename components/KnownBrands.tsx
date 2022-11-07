@@ -24,8 +24,6 @@ export function KnownBrands() {
                 <Carousel
                     infiniteLoop
                     autoPlay
-                    // centerMode
-                    // centerSlidePercentage={40}
                     showArrows={false}
                     showStatus={false}
                     showIndicators={false}
@@ -130,8 +128,6 @@ export function KnownBrands() {
                 <Carousel
                     infiniteLoop
                     autoPlay
-                    // centerMode
-                    // centerSlidePercentage={30}
                     showArrows={false}
                     showStatus={false}
                     showIndicators={false}
