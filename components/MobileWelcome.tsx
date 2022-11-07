@@ -11,6 +11,7 @@ export function MobileWelcome() {
                     autoPlay
                     loop
                     muted
+                    playsInline
                     poster="images/torres.jpg"
                     className=" top-0 min-w-full  w-auto  rounded-b-3xl max-h-[88vh]"
                     src="/VideoInsta1.mp4"
