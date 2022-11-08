@@ -3,7 +3,7 @@ import Transition from "../utils/Transition";
 
 import engLucas from "../public/engLucas.jpg";
 import sandro from "../public/Sandro.jpeg";
-import img3 from "../public/img3.jpeg";
+import img5 from "../public/img5.jpeg";
 import img4 from "../public/img4.jpeg";
 
 import Image from "next/image";
@@ -108,9 +108,7 @@ function Features() {
                                         <Image
                                             height={24}
                                             width={24}
-                                            src={
-                                                "/screwdriver-wrench-solid.svg"
-                                            }
+                                            src={"/pen-ruler-solid.svg"}
                                             alt={"solar panel logo"}
                                         />
                                     </div>
@@ -144,7 +142,9 @@ function Features() {
                                         <Image
                                             height={24}
                                             width={24}
-                                            src={"/chart-line-solid.svg"}
+                                            src={
+                                                "/screwdriver-wrench-solid.svg"
+                                            }
                                             alt={"solar panel logo"}
                                         />
                                     </div>
@@ -211,7 +211,7 @@ function Features() {
                                             <Image
                                                 height={360}
                                                 width={600}
-                                                src={img3}
+                                                src={img5}
                                                 alt="Features bg"
                                             />
                                         </div>

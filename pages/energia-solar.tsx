@@ -59,7 +59,7 @@ const SolarGeneration: NextPage = () => {
                                 Fale com nosso
                             </p>
                             <h2 className="text-3xl md:text-5xl font-extrabold lg:text-7xl">
-                                Técnico especialista em <br />
+                                Engenheiro especialista em <br />
                                 <span className="text-[#ffaa00]">
                                     Energia Solar.
                                 </span>
@@ -80,7 +80,7 @@ const SolarGeneration: NextPage = () => {
                                     className="flex items-center gap-2 justify-center bg-green-500 font-bold py-3 px-6 rounded-3xl md:text-lg hover:bg-green-200 w-fit"
                                 >
                                     <WhatsappLogo size={28} />
-                                    <p>Falar com o técnico</p>
+                                    <p>Falar com o engenheiro</p>
                                 </a>
                                 <a
                                     href="tel:48984110903"

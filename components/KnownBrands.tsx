@@ -10,6 +10,15 @@ import logo6 from "../public/logo6.svg";
 import logo7 from "../public/logo7.svg";
 import logo8 from "../public/logo8.svg";
 import logo9 from "../public/logo9.svg";
+import logo10 from "../public/logo10.svg";
+import logo11 from "../public/logo11.svg";
+import logo12 from "../public/logo12.svg";
+import logo13 from "../public/logo13.svg";
+import logo14 from "../public/logo14.svg";
+import logo15 from "../public/logo15.svg";
+import logo16 from "../public/logo16.svg";
+import logo17 from "../public/logo17.svg";
+import logo18 from "../public/logo18.svg";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -67,7 +76,31 @@ export function KnownBrands() {
                         <Image
                             height={80}
                             width={288}
-                            src={logo4}
+                            src={logo18}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo17}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo16}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo15}
                             alt="Logo Parceiro"
                         />
                     </div>
@@ -124,6 +157,22 @@ export function KnownBrands() {
                             alt="Logo Parceiro"
                         />
                     </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo14}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo13}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
                 </Carousel>
                 <Carousel
                     infiniteLoop
@@ -172,6 +221,30 @@ export function KnownBrands() {
                             height={80}
                             width={288}
                             src={logo5}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo12}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo11}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo16}
                             alt="Logo Parceiro"
                         />
                     </div>
@@ -229,6 +302,38 @@ export function KnownBrands() {
                             alt="Logo Parceiro"
                         />
                     </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo10}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo7}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo18}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo12}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
                 </Carousel>
                 <Carousel
                     infiniteLoop
@@ -280,6 +385,38 @@ export function KnownBrands() {
                             height={80}
                             width={288}
                             src={logo2}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo14}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo15}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo16}
+                            alt="Logo Parceiro"
+                        />
+                    </div>
+                    <div>
+                        <Image
+                            height={80}
+                            width={288}
+                            src={logo1}
                             alt="Logo Parceiro"
                         />
                     </div>

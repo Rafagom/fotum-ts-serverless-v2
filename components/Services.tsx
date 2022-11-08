@@ -7,10 +7,12 @@ export function Services() {
     return (
         <div
             id="servicos"
-            className="flex flex-col gap-3 px-4 mt-4 mb-16 max-w-[1400px] md:mx-auto md:px-0 "
+            className="flex flex-col gap-6 px-4  mb-16 max-w-[1400px] md:mx-auto md:px-0 pt-10 md:pt-0"
         >
-            <h2 className="text-[#ffaa00] font-medium">NOSSOS SERVIÇOS</h2>
-            <p>
+            <h2 className="text-[#ffaa00] font-medium text-3xl text-center">
+                NOSSOS SERVIÇOS
+            </h2>
+            <p className="text-center">
                 Impulsionamos a transição para sistemas de energia mais
                 sustentáveis, confiáveis ​​e acessíveis. Com nossas tecnologias
                 inovadoras, energizamos a sociedade!
@@ -34,16 +36,11 @@ export function Services() {
                             />
                         </Disclosure.Button>
                         <Disclosure.Panel className="flex flex-col text-center gap-y-4">
-                            <ul className="flex flex-col  gap-5 text-left pl-6">
-                                <li>&#x2713; Projeto</li>
-                                <li>&#x2713; Homologação</li>
-                                <li>&#x2713; Instalação</li>
-                                <li>&#x2713; Manutenção</li>
-                                <li>&#x2713; Ampliações</li>
-                                <li>&#x2713; Remanejamento</li>
-                            </ul>
+                            Invista em energia solar e economize dinheiro
+                            gerando sua própria energia elétrica.
                             <Link
                                 href="/solarGeneration"
+                                as="energia-solar"
                                 className="text-center font-semibold"
                             >
                                 Saiba mais...
@@ -57,26 +54,25 @@ export function Services() {
                     <>
                         <Disclosure.Button className="grid grid-cols-[1fr,10fr,1fr]  items-center rounded py-4 border-2 gap-4 px-4 hover:border-[#ffaa00] ">
                             <Image
-                                src={"/screwdriver-wrench-solid.svg"}
+                                src={"/pen-ruler-solid.svg"}
                                 alt={"solar panel logo"}
                                 width={24}
                                 height={24}
                             />
-                            <p className="text-left">Instalações Elétricas</p>
+                            <p className="text-left">Projetos</p>
                             <CaretUp
                                 size={20}
                                 className={open ? "rotate-180 transform" : ""}
                             />
                         </Disclosure.Button>
                         <Disclosure.Panel className="flex flex-col text-center gap-y-4">
-                            <ul className="flex flex-col  gap-5 text-left pl-6">
-                                <li>&#x2713; Projetos e instalação</li>
-                                <li>&#x2713; Novas instalações e reformas</li>
-                                <li>&#x2713; Adequações normativas</li>
-                                <li>&#x2713; Inspeções e laudos</li>
-                            </ul>
+                            Projetos de instalações elétricas residenciais,
+                            comerciais e prediais, entradas de energia elétrica
+                            em baixa e média tensão, SPDA (para-raios) e
+                            bombeiros.
                             <Link
-                                href="#"
+                                href="generalServices"
+                                as="servicos-gerais"
                                 className="text-center font-semibold tex"
                             >
                                 Saiba mais...
@@ -91,28 +87,25 @@ export function Services() {
                         <Disclosure.Button className="grid grid-cols-[1fr,10fr,1fr]  items-center rounded py-4 border-2 gap-4 px-4 hover:border-[#ffaa00] ">
                             <Image
                                 className="text-yellow-500"
-                                src={"/chart-line-solid.svg"}
+                                src={"/screwdriver-wrench-solid.svg"}
                                 alt={"solar panel logo"}
                                 width={24}
                                 height={24}
                             />
-                            <p className="text-left">Eficiência energética</p>
+                            <p className="text-left">Instalações elétricas</p>
                             <CaretUp
                                 size={20}
                                 className={open ? "rotate-180 transform" : ""}
                             />
                         </Disclosure.Button>
                         <Disclosure.Panel className="flex flex-col text-center gap-y-4">
-                            <ul className="flex flex-col  gap-5 text-left pl-6">
-                                <li>
-                                    &#x2713; Análises de potenciais economias
-                                </li>
-                                <li>
-                                    &#x2713; Medições e identificações de falhas
-                                </li>
-                            </ul>
+                            Mão de obra qualificada para execução de projetos
+                            elétricos e luminotécnicos, entradas de energia,
+                            infraestrutura, instalação de lustres, motores e
+                            quadros.
                             <Link
-                                href="#"
+                                href="generalServices"
+                                as="servicos-gerais"
                                 className="text-center font-semibold tex"
                             >
                                 Saiba mais...

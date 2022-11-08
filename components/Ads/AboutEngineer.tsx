@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 function AboutEngineer() {
+    const router = useRouter();
+    // console.log(router.pathname);
     return (
         <>
             {/* About the engineer */}
@@ -23,9 +26,12 @@ function AboutEngineer() {
 
                     <div className="flex flex-col gap-4 col-span-2">
                         <h2 className="text-2xl font-bold text-center ">
-                            Téc. Lucas Marcelo de Deus <br />{" "}
+                            {router.pathname == "/servicos-gerais"
+                                ? "Téc"
+                                : "Eng"}
+                            . Lucas Marcelo de Deus <br />{" "}
                             <span className="text-lg font-normal">
-                                CREA: 184.434-3
+                                CREA: 184.324-3
                             </span>
                         </h2>
                         <div className="flex flex-col gap-3 text-center  text-xl px-6">

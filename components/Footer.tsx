@@ -16,7 +16,7 @@ export function Footer() {
                     </p>
                 </a>
                 <a
-                    href="https://api.whatsapp.com/message/2KTISK2P7CG6E1?autoload=1&app_absent=0"
+                    href="https://wa.me/message/2KTISK2P7CG6E1"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 font-medium"

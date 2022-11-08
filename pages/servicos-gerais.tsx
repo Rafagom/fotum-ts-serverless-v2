@@ -80,7 +80,7 @@ const SolarGeneration: NextPage = () => {
                                     className="flex items-center gap-2 justify-center bg-green-500 font-bold py-3 px-6 rounded-3xl md:text-lg hover:bg-green-200 w-fit"
                                 >
                                     <WhatsappLogo size={28} />
-                                    <p>Falar com o engenheiro</p>
+                                    <p>Falar com o técnico</p>
                                 </a>
                                 <a
                                     href="tel:48984110903"

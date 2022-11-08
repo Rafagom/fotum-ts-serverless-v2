@@ -32,7 +32,7 @@ export default function SolarAdvantages() {
                     <div className="grid grid-cols-[2fr,8fr] px-8 py-2 gap-4 items-center justify-start bg-[#00324b] rounded-full lg:flex lg:flex-col lg:text-center lg:py-12 lg:rounded-3xl">
                         <CurrencyCircleDollar size={72} weight="thin" />
 
-                        <p>Parcele em até 72x, sem entrada</p>
+                        <p>Parcele em até 120x, sem entrada</p>
                     </div>
                 </div>
 
