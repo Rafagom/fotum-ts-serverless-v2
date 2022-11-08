@@ -39,7 +39,7 @@ const Home: NextPage = () => {
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff"></meta>
             </Head>
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full overflow-hidden">
                 <Header />
 
                 <div className="sm:hidden flex">

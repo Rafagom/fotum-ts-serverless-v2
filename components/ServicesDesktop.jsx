@@ -3,6 +3,8 @@ import Transition from "../utils/Transition";
 
 import engLucas from "../public/engLucas.jpg";
 import sandro from "../public/Sandro.jpeg";
+import img3 from "../public/img3.jpeg";
+import img4 from "../public/img4.jpeg";
 
 import Image from "next/image";
 
@@ -190,16 +192,6 @@ function Features() {
                                                 alt="Features bg"
                                             />
                                         </div>
-                                        <div className="w-full lg:w-fit lg:absolute bg-white  bottom-[-60px] right-0 xl:right-[-40px] py-6 px-6 z-20 flex flex-col items-center justify-center shadow-lg border border-[#00324b]">
-                                            <ul className="flex flex-col  gap-5 text-left">
-                                                <li>&#x2713; Projeto</li>
-                                                <li>&#x2713; Homologação</li>
-                                                <li>&#x2713; Instalação</li>
-                                                <li>&#x2713; Manutenção</li>
-                                                <li>&#x2713; Ampliações</li>
-                                                <li>&#x2713; Remanejamento</li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </Transition>
                                 {/* Item 2 */}
@@ -219,28 +211,9 @@ function Features() {
                                             <Image
                                                 height={360}
                                                 width={600}
-                                                src={sandro}
+                                                src={img3}
                                                 alt="Features bg"
                                             />
-                                        </div>
-                                        <div className="w-full lg:w-fit lg:absolute bg-white  bottom-[-60px] right-0 xl:right-[-40px] py-6 px-6 z-20 flex flex-col items-center justify-center shadow-lg border border-[#00324b] ">
-                                            <ul className="flex flex-col  gap-5 text-left">
-                                                <li>
-                                                    &#x2713; Projetos e
-                                                    instalação
-                                                </li>
-                                                <li>
-                                                    &#x2713; Novas instalações
-                                                </li>
-                                                <li>&#x2713; Reformas</li>
-                                                <li>
-                                                    &#x2713; Adequações
-                                                    normativas
-                                                </li>
-                                                <li>
-                                                    &#x2713; Inspeções e laudos
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </Transition>
@@ -261,22 +234,9 @@ function Features() {
                                             <Image
                                                 height={360}
                                                 width={600}
-                                                src={sandro}
+                                                src={img4}
                                                 alt="Features bg"
                                             />
-                                        </div>
-
-                                        <div className="w-full lg:w-fit lg:absolute bg-white  bottom-[-60px] right-0 xl:right-[-40px] py-6 px-3 z-20 flex flex-col items-center justify-center shadow-lg border border-[#00324b]">
-                                            <ul className="flex flex-col  gap-5 text-left">
-                                                <li>
-                                                    &#x2713; Análises de
-                                                    potenciais economias
-                                                </li>
-                                                <li>
-                                                    &#x2713; Medições e
-                                                    identificações de falhas
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </Transition>

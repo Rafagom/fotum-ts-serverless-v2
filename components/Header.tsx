@@ -55,7 +55,7 @@ export function Header() {
                                         </a>
                                     </Link>
                                     <div className="-mr-2 flex items-center md:hidden">
-                                        <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center  hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset ">
+                                        <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center  hover:text-gray-500 hover:bg-gray-100  ">
                                             <Image
                                                 height={32}
                                                 width={32}
@@ -74,7 +74,7 @@ export function Header() {
                                         href={item.href}
                                         as={item.as}
                                     >
-                                        {item.name}
+                                        <a>{item.name}</a>
                                     </Link>
                                 ))}
                                 <div className="flex items-center gap-6">
@@ -124,7 +124,7 @@ export function Header() {
                                         />
                                     </Link>
                                     <div className="-mr-2">
-                                        <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center  hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset ">
+                                        <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center  hover:text-gray-500 hover:bg-gray-100">
                                             <Image
                                                 height={32}
                                                 width={32}
@@ -141,7 +141,7 @@ export function Header() {
                                             href={item.href}
                                             as={item.as}
                                         >
-                                            <Popover.Button className=" text-center py-4 rounded-md text-base font-bold  hover:text-gray-900 hover:bg-gray-500 w-full">
+                                            <Popover.Button className=" text-center py-4 rounded-md text-base font-bold  hover:text-gray-900 hover:bg-gray-200 w-full">
                                                 {item.name}
                                             </Popover.Button>
                                         </Link>
@@ -150,7 +150,7 @@ export function Header() {
                                         href="https://www.instagram.com/fotumengenharia/"
                                         target="_blank"
                                         rel="noreferrer"
-                                        className=" px-24 py-4 rounded-md text-base font-bold  hover:text-gray-900 hover:bg-yellow-500"
+                                        className=" px-24 py-4 rounded-md text-base font-bold  hover:text-gray-900 hover:bg-gray-200"
                                     >
                                         Intagram
                                     </a>
@@ -158,7 +158,7 @@ export function Header() {
                                         href="https://api.whatsapp.com/message/2KTISK2P7CG6E1?autoload=1&app_absent=0"
                                         target="_blank"
                                         rel="noreferrer"
-                                        className=" px-24 py-4 rounded-md text-base font-bold  hover:text-gray-900 hover:bg-yellow-500"
+                                        className=" px-24 py-4 rounded-md text-base font-bold  hover:text-gray-900 hover:bg-gray-200"
                                     >
                                         Whatsapp
                                     </a>
