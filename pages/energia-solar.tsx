@@ -66,7 +66,7 @@ const SolarGeneration: NextPage = () => {
                             </h2>
                             <p className="text-xl md:text-2xl max-w-[40ch]">
                                 Receba agora um atendimento personalizado do
-                                nosso técnico que atende a instalações de
+                                nosso engenheiro que atende a instalações de
                                 Energia Solar todos os dias!
                             </p>
                         </div>
