@@ -24,8 +24,7 @@ const TextInputLiveFeedback = ({ label, helpText, ...props }: any) => {
     // - or, the has been visited (touched === true)
     const [didFocus, setDidFocus] = React.useState(false);
     const handleFocus = () => setDidFocus(true);
-    const showFeedback =
-        (!!didFocus && field.value.trim().length > 2) || meta.touched;
+    const showFeedback = !!didFocus || meta.touched;
 
     return (
         <div
@@ -88,12 +87,14 @@ export function ContactForm() {
     async function send(campos: any) {
         let email = campos.email;
         let subject = campos.subject;
+        let phone = campos.phone;
         let cost = campos.cost;
         let message = campos.message;
         let username = campos.username;
         axios.post("/api/sendMail", {
             username,
             email,
+            phone,
             subject,
             cost,
             message,
@@ -104,6 +105,7 @@ export function ContactForm() {
         initialValues: {
             username: "",
             email: "",
+            phone: "",
             subject: "",
             cost: "",
             message: "",
@@ -137,6 +139,12 @@ export function ContactForm() {
                     /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                     "Email inválido"
                 ),
+
+            phone: Yup.string()
+                // .min(8, "Must be at least 8 characters")
+                // .max(20, "Must be less  than 20 characters")
+                .required("É necessario preencher o seu telefone")
+                .matches(/^[0-9\s]+$/, "Inserir apenas números"),
         }),
     });
 
@@ -150,7 +158,7 @@ export function ContactForm() {
                 animate={control}
             >
                 <h1 className="text-4xl font-bold text-[#ffaa00] text-center w-[13ch] md:w-full">
-                    Se interessou? Fale conosco!
+                    Solicite seu contato!
                 </h1>{" "}
             </motion.div>
             <FormikProvider value={formik}>
@@ -179,6 +187,14 @@ export function ContactForm() {
                             // helpText="Must be 8-20 characters and cannot contain special characters."
                             type="email"
                             placeholder="Insira seu Email"
+                        />
+                        <TextInputLiveFeedback
+                            className="min-w-[304px] w-[60vw] h-10  p-2 rounded border border-solid border-[#00324b] bg-inherit resize-none text-[#00324b] overflow-auto focus:border-[#ffaa00] focus:ring-[#ffaa00] focus:outline-none scrollbar-thumb-zinc-700 scrollbar-thin scrollbar-track-transparent mb-3"
+                            label="Telefone *"
+                            id="phone"
+                            name="phone"
+                            type="number"
+                            placeholder="Insira seu Telefone"
                         />
                         <TextInputLiveFeedback
                             className="min-w-[304px] w-[60vw] h-10  p-2 rounded border border-solid border-[#00324b] bg-inherit resize-none text-[#00324b] overflow-auto focus:border-[#ffaa00] focus:ring-[#ffaa00] focus:outline-none scrollbar-thumb-zinc-700 scrollbar-thin scrollbar-track-transparent mb-3"

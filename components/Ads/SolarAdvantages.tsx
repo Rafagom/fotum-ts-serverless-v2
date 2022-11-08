@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import {
     CurrencyCircleDollar,
     HouseLine,
@@ -6,6 +7,7 @@ import {
 } from "phosphor-react";
 
 export default function SolarAdvantages() {
+    const router = useRouter();
     return (
         <div className="bg-gray-200">
             <div className="flex flex-col p-4 gap-8  lg:max-w-[1400px] lg:mx-auto">
@@ -43,7 +45,9 @@ export default function SolarAdvantages() {
                     className="flex flex-col gap-4 mt-6"
                 >
                     <div className="flex items-center justify-center bg-green-500 font-bold py-3 px-6 rounded-3xl text-lg hover:bg-green-200">
-                        Falar com o Técnico agora!
+                        {router.pathname == "servicos-gerais"
+                            ? "Falar com o Técnico agora!"
+                            : "Falar com o Engenheiro agora!"}
                     </div>
                 </a>
             </div>
