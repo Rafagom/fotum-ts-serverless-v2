@@ -15,13 +15,13 @@ const sendGridMail = require("@sendgrid/mail");
 sendGridMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async (request: NextApiRequest, response: NextApiResponse) => {
-    const { email, username, subject, cost, message } = request.body;
+    const { email, username, phone, subject, cost, message } = request.body;
 
     const msg = {
         to: "contato@fotumengenharia.com.br",
-        from: "rafox.gomes@gmail.com",
+        from: "eng.rsgomes2@gmail.com",
         subject: `Novo contato: ${username}`,
-        text: `Email: ${email}\n\nNome: ${username}\n\nAssunto: ${subject}\n\nFatura: ${cost}\n\nMensagem: ${message}`,
+        text: `Email: ${email}\n\nNome: ${username}\n\nTelefone: ${phone}\n\nAssunto: ${subject}\n\nFatura: ${cost}\n\nMensagem: ${message}`,
     };
 
     try {
