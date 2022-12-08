@@ -8,6 +8,11 @@ const Contact: NextPage = () => {
     return (
         <>
             <Head>
+                <meta charSet="UTF-8" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                ></meta>
                 <title>Fótum Engenharia | Contato</title>
                 <link
                     rel="apple-touch-icon"

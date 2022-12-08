@@ -14,6 +14,15 @@ const SolarGeneration: NextPage = () => {
     return (
         <>
             <Head>
+                <meta charSet="UTF-8" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                ></meta>
+                <meta
+                    name="description"
+                    content="Com mais de 10 anos de experiência em serviços elétricos de excelência, oferecendo as melhores soluções em projetos, instalações e energia solar fotovoltaica."
+                />
                 <title>Fótum Engenharia | Serviços Gerais</title>
                 <link
                     rel="apple-touch-icon"
