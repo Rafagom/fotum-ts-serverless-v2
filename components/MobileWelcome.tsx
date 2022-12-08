@@ -12,7 +12,7 @@ export function MobileWelcome() {
                     loop
                     muted
                     playsInline
-                    poster="images/torres.jpg"
+                    poster="/logo.png"
                     className=" top-0 min-w-full  w-auto  rounded-b-3xl max-h-[88vh]"
                     src="/VideoInsta1.mp4"
                 ></video>
