@@ -7,6 +7,19 @@ export default class Document extends NextDocument {
             <Html>
                 <Head>
                     <Script
+                        src="https://www.googletagmanager.com/gtag/js?id=GTM-5TJPJLF"
+                        strategy="afterInteractive"
+                    />
+                    <Script id="google-analytics" strategy="afterInteractive">
+                        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'GTM-5TJPJLF');
+        `}
+                    </Script>
+                    {/* <Script
                         id="google-analytics"
                         strategy="afterInteractive"
                         dangerouslySetInnerHTML={{
@@ -16,7 +29,7 @@ export default class Document extends NextDocument {
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5TJPJLF');`,
                         }}
-                    ></Script>
+                    ></Script> */}
                     <meta
                         name="google-site-verification"
                         content="a7JLH2XUmPvgX4X7Eojev9zKBVLX0KzsZfWHQ8IMkvE"
