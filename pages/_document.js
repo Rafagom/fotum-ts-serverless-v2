@@ -51,7 +51,11 @@ export default class Document extends NextDocument {
                     <link rel="manifest" href="/site.webmanifest" />
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff" />
-
+                    <Script
+                        async
+                        src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
+                        strategy="afterInteractive"
+                    ></Script>
                     <Script
                         id="google-analytics"
                         strategy="afterInteractive"
@@ -66,17 +70,6 @@ export default class Document extends NextDocument {
                 </Head>
 
                 <body>
-                    {/* <Script
-                        async
-                        src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
-                        strategy="afterInteractive"
-                    ></Script>
-                    <Script id="google-analytics" strategy="afterInteractive">
-                        {`window.dataLayer = window.dataLayer || [];
-  function gtag() dataLayer.push(arguments);
-  gtag('js', new Date());
-  gtag('config', 'AW-10901115225');`}
-                    </Script> */}
                     <noscript
                         dangerouslySetInnerHTML={{
                             __html: `<iframe src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
