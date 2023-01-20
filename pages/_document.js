@@ -7,6 +7,7 @@ export default class Document extends NextDocument {
             <Html>
                 <Head>
                     <Script
+                        async
                         src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
                         strategy="afterInteractive"
                     ></Script>
