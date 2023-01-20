@@ -52,7 +52,7 @@ export default class Document extends NextDocument {
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff" />
 
-                    <Script
+                    {/* <Script
                         id="google-analytics"
                         strategy="afterInteractive"
                         dangerouslySetInnerHTML={{
@@ -62,7 +62,21 @@ export default class Document extends NextDocument {
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5TJPJLF');`,
                         }}
-                    ></Script>
+                    ></Script> */}
+
+                    {/* <!-- Google tag (gtag.js) --> */}
+                    <script
+                        async
+                        src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
+                    ></script>
+                    <script>
+                        {(window.dataLayer = window.dataLayer || [])};
+                        {function gtag() {
+                            dataLayer.push(arguments);
+                        }}
+                        ;{gtag("js", new Date())};
+                        {gtag("config", "AW-10901115225")}
+                    </script>
                 </Head>
 
                 <body>
