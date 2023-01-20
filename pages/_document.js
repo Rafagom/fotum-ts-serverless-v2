@@ -6,7 +6,7 @@ export default class Document extends NextDocument {
         return (
             <Html>
                 <Head>
-                    <Script
+                    <script
                         id="google-analytics"
                         strategy="afterInteractive"
                         dangerouslySetInnerHTML={{
@@ -16,7 +16,7 @@ export default class Document extends NextDocument {
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5TJPJLF');`,
                         }}
-                    ></Script>
+                    ></script>
 
                     {/* <Script
                         src="https://www.googletagmanager.com/gtag/js?id=GTM-5TJPJLF"
