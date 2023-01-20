@@ -78,12 +78,12 @@ export default class Document extends NextDocument {
                 </Head>
 
                 <body>
-                    <noscript
+                    {/* <noscript
                         dangerouslySetInnerHTML={{
                             __html: `<iframe src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                         }}
-                    ></noscript>
+                    ></noscript> */}
 
                     <Main />
                     <NextScript />
