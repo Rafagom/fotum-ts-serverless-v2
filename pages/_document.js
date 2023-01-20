@@ -51,11 +51,7 @@ export default class Document extends NextDocument {
                     <link rel="manifest" href="/site.webmanifest" />
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff" />
-                    <Script
-                        async
-                        src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
-                        strategy="afterInteractive"
-                    ></Script>
+
                     <Script
                         id="google-analytics"
                         strategy="afterInteractive"
@@ -64,7 +60,7 @@ export default class Document extends NextDocument {
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','AW-10901115225');`,
+    })(window,document,'script','dataLayer','GTM-5TJPJLF');`,
                         }}
                     ></Script>
                 </Head>
@@ -72,7 +68,7 @@ export default class Document extends NextDocument {
                 <body>
                     <noscript
                         dangerouslySetInnerHTML={{
-                            __html: `<iframe src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
+                            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TJPJLF"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                         }}
                     ></noscript>
