@@ -65,18 +65,16 @@ export default class Document extends NextDocument {
                     ></Script> */}
 
                     {/* <!-- Google tag (gtag.js) --> */}
-                    <script
-                        async
+                    <Script
                         src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
-                    ></script>
-                    <script>
-                        {(window.dataLayer = window.dataLayer || [])};
-                        {function gtag() {
-                            dataLayer.push(arguments);
-                        }}
-                        ;{gtag("js", new Date())};
-                        {gtag("config", "AW-10901115225")}
-                    </script>
+                        strategy="afterInteractive"
+                    ></Script>
+                    <Script id="google-analytics" strategy="afterInteractive">
+                        {`window.dataLayer = window.dataLayer || [];
+  function gtag() dataLayer.push(arguments);
+  gtag('js', new Date());
+  gtag('config', 'AW-10901115225');`}
+                    </Script>
                 </Head>
 
                 <body>
