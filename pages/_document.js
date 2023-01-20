@@ -6,6 +6,16 @@ export default class Document extends NextDocument {
         return (
             <Html>
                 <Head>
+                    <Script
+                        src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
+                        strategy="afterInteractive"
+                    ></Script>
+                    <Script id="google-analytics" strategy="afterInteractive">
+                        {`window.dataLayer = window.dataLayer || [];
+  function gtag() dataLayer.push(arguments);
+  gtag('js', new Date());
+  gtag('config', 'AW-10901115225');`}
+                    </Script>
                     <meta
                         name="google-site-verification"
                         content="a7JLH2XUmPvgX4X7Eojev9zKBVLX0KzsZfWHQ8IMkvE"
@@ -63,18 +73,6 @@ export default class Document extends NextDocument {
     })(window,document,'script','dataLayer','GTM-5TJPJLF');`,
                         }}
                     ></Script> */}
-
-                    {/* <!-- Google tag (gtag.js) --> */}
-                    <Script
-                        src="https://www.googletagmanager.com/gtag/js?id=AW-10901115225"
-                        strategy="afterInteractive"
-                    ></Script>
-                    <Script id="google-analytics" strategy="afterInteractive">
-                        {`window.dataLayer = window.dataLayer || [];
-  function gtag() dataLayer.push(arguments);
-  gtag('js', new Date());
-  gtag('config', 'AW-10901115225');`}
-                    </Script>
                 </Head>
 
                 <body>
