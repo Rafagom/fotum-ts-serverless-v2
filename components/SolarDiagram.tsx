@@ -7,14 +7,6 @@ import {
   useAnimation,
 } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import {
-  animation,
-  animationStart,
-  order,
-  orderManager,
-  sequence,
-  setAnimationStart,
-} from './functions/AnimationSequence';
 
 const solarFlux: {
   name: string;
@@ -74,7 +66,28 @@ const solarFlux: {
 ];
 
 function SolarDiagram() {
-  orderManager();
+  const animation = useAnimation();
+
+  const [order, setOrder] = useState(0);
+  const [animationStart, setAnimationStart] = useState(false);
+
+  async function sequence() {
+    await animation.start({
+      y: -20,
+      scale: 1.1,
+      backgroundColor: '#ffaa00',
+    });
+
+    setOrder(order + 1);
+  }
+
+  useEffect(() => {
+    if (!(order <= 5)) {
+      setOrder(0);
+    } else {
+      sequence();
+    }
+  }, [order]);
 
   return (
     <div className="bg-white pb-10">
