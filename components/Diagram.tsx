@@ -47,6 +47,7 @@ function Diagram(props: any) {
               pathEnd: string;
               text: string;
               start: number;
+              icon?: any;
             }) => (
               <motion.div
                 key={stage.name}
@@ -67,11 +68,14 @@ function Diagram(props: any) {
               >
                 <div className="absolute top-2 left-2">{stage.start + 1}</div>
                 <div className="h-20 w-20 relative before ">
-                  <Image
-                    src={stage.pathStart}
-                    alt={stage.name}
-                    layout="fill"
-                  ></Image>
+                  {props.Image && (
+                    <Image
+                      src={stage.pathStart}
+                      alt={stage.name}
+                      layout="fill"
+                    ></Image>
+                  )}
+                  {props.Icon && stage.icon}
                 </div>
                 <p className=" font-medium">{stage.text}</p>
               </motion.div>

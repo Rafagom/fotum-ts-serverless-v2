@@ -12,29 +12,19 @@ import {
 } from 'phosphor-react';
 import About from '../components/Ads/AboutEngineer';
 import GeneralAdvantages from '../components/Ads/GeneralAdvantages';
-import Advantages from '../components/Ads/SolarAdvantages';
 import WorkNumbers from '../components/Ads/WorkNumbers';
 import { Footer } from '../components/Footer';
-import GeneralServicesDiagram from '../components/GeneralServicesDiagram';
 import { Header } from '../components/Header';
 import Diagram from '../components/Diagram';
 
 const SolarGeneration: NextPage = () => {
-  const solarFlux:
-    | {
-        name: string;
-        icon: any;
-        pathEnd: string;
-        text: string;
-        start: number;
-      }[]
-    | {
-        name: string;
-        icon: any;
-        pathEnd: string;
-        text: string;
-        start: number;
-      }[] = [
+  const solarFlux: {
+    name: string;
+    icon: any;
+    pathEnd: string;
+    text: string;
+    start: number;
+  }[] = [
     {
       name: 'Projeto elétricos',
       icon: <NotePencil size={64} />,
@@ -184,14 +174,12 @@ const SolarGeneration: NextPage = () => {
           </a>
         </div>
       </div>
-      <Diagram data={solarFlux} />
-      {/* <GeneralServicesDiagram /> */}
+      <Diagram data={solarFlux} Icon />
       <WorkNumbers />
       <GeneralAdvantages />
       <div className="pt-48 pb-10">
         <About />
       </div>
-
       <Footer />
     </>
   );

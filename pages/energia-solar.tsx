@@ -7,7 +7,6 @@ import Advantages from '../components/Ads/SolarAdvantages';
 import WorkNumbers from '../components/Ads/WorkNumbers';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
-import SolarDiagram from '../components/SolarDiagram';
 import Diagram from '../components/Diagram';
 
 const SolarGeneration: NextPage = () => {
@@ -165,7 +164,7 @@ const SolarGeneration: NextPage = () => {
           </a>
         </div>
       </div>
-      <Diagram data={solarFlux} />
+      <Diagram data={solarFlux} Image />
       <WorkNumbers />
       <Advantages />
       <div className="pt-48 pb-10">
