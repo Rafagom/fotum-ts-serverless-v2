@@ -1,12 +1,6 @@
 import Image from 'next/image';
-import {
-  motion,
-  Variants,
-  useTime,
-  useTransform,
-  useAnimation,
-} from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 function Diagram(props: any) {
   const animation = useAnimation();
