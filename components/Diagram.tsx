@@ -15,11 +15,11 @@ function Diagram(props: any) {
       backgroundColor: '#ffaa00',
     });
 
-    setOrder(order + 1);
+    setOrder((currState) => currState + 1);
   }
 
   useEffect(() => {
-    if (!(order <= 5)) {
+    if (order > 5) {
       setOrder(0);
     } else {
       sequence();
@@ -46,19 +46,19 @@ function Diagram(props: any) {
               <motion.div
                 key={stage.name}
                 className="relative grid grid-rows-2 border border-[#00324b] rounded-2xl 
-                 py-3 px-2  gap-3 text-center   place-items-center lg:grid-rows-[2fr,3fr]   lg:py-6 lg:px-4"
+                 py-3 px-2  gap-3 text-center   place-items-center lg:grid-rows-[2fr,3fr] lg:py-6 lg:px-4"
                 animate={stage.start == order ? animation : ''}
                 transition={{
                   duration: 1,
                   repeat: 1,
                   repeatType: 'reverse',
                 }}
-                onViewportEnter={async () => {
-                  if (!animationStart) {
-                    sequence();
-                    setAnimationStart(true);
-                  }
-                }}
+                // onViewportEnter={async () => {
+                //   if (!animationStart) {
+                //     sequence();
+                //     setAnimationStart(true);
+                //   }
+                // }}
               >
                 <div className="absolute top-2 left-2">{stage.start + 1}</div>
                 <div className="h-20 w-20 relative before ">
@@ -71,7 +71,7 @@ function Diagram(props: any) {
                   )}
                   {props.Icon && stage.icon}
                 </div>
-                <p className=" font-medium">{stage.text}</p>
+                <p className="font-medium">{stage.text}</p>
               </motion.div>
             )
           )}
