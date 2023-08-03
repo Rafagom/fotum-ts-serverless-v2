@@ -91,21 +91,20 @@ export function Header() {
               </div>
             </nav>
           </div>
-
           <Transition
             as={Fragment}
-            enter="duration-150 ease-out"
-            enterFrom="opacity-0 scale-95"
-            enterTo="opacity-100 scale-100"
-            leave="duration-100 ease-in"
-            leaveFrom="opacity-100 scale-100"
-            leaveTo="opacity-0 scale-95"
+            enter="duration-500 ease-out"
+            enterFrom=" -translate-y-full"
+            enterTo="translate-y-0"
+            leave="duration-150 ease-in"
+            leaveFrom="translate-y-0"
+            leaveTo=" -translate-y-full"
           >
             <Popover.Panel
               focus
               className="absolute z-50 top-0 inset-x-0 p-0 transition transform origin-top-right md:hidden"
             >
-              <div className="rounded-lg h-[100vh] shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+              <div className="rounded-lg h-screen shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <Link
                     href="/"
