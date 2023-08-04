@@ -137,7 +137,7 @@ export function Header() {
                     rel="noreferrer"
                     className=" px-24 py-4 rounded-md text-base font-bold  hover:text-gray-900 hover:bg-gray-200"
                   >
-                    Intagram
+                    Instagram
                   </a>
                   <a
                     href="https://wa.me/message/2KTISK2P7CG6E1"
