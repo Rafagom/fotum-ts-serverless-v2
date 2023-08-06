@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { WhatsappLogo } from 'phosphor-react';
+import { LadderSimple, ShieldCheck, WhatsappLogo } from 'phosphor-react';
 import About from '../components/Ads/AboutEngineer';
 import Advantages from '../components/Ads/SolarAdvantages';
 import WorkNumbers from '../components/Ads/WorkNumbers';
@@ -27,7 +27,7 @@ const SolarGeneration: NextPage = () => {
   }[] = [
     {
       name: 'Instalação padrão',
-      icon: <Snowflake size={64} />,
+      icon: <ShieldCheck size={64} />,
       pathEnd: '/standardInstallation.png',
       start: 0,
 
@@ -35,7 +35,7 @@ const SolarGeneration: NextPage = () => {
     },
     {
       name: 'Instalação especializada',
-      icon: <Plug size={64} />,
+      icon: <Snowflake size={64} />,
       pathEnd: '/specializedInstallation.png',
       start: 1,
 
@@ -51,7 +51,7 @@ const SolarGeneration: NextPage = () => {
     },
     {
       name: 'Instalações com rapel',
-      icon: <Ladder size={64} />,
+      icon: <LadderSimple size={64} />,
       pathEnd: '/rapelInstallation.png',
       start: 3,
 
@@ -124,11 +124,11 @@ const SolarGeneration: NextPage = () => {
               <h2 className="text-3xl md:text-5xl font-extrabold lg:text-7xl">
                 Técnico especialista em <br />
                 <span className="text-[#ffaa00]">
-                  projetos e instalações solares.
+                  instalação de sistemas de ar condicionado.{' '}
                 </span>
               </h2>
               <p className="text-xl md:text-2xl max-w-[40ch]">
-                Receba agora atendimento personalizado do nosso técnico,
+                Receba agora atendimento personalizado do nosso técnico
                 especializado em instalações de ar condicionado em todos os dias
                 da semana!
               </p>
