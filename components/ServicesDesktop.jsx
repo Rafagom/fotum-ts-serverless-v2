@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition';
 
+import engLucas from '../public/engLucas.jpg';
 import sandro from '../public/Sandro.jpeg';
 import img5 from '../public/img5.jpeg';
 import img4 from '../public/img4.jpeg';
