@@ -26,12 +26,12 @@ export function SpecialistInformation(props: any) {
             <div className="flex flex-col gap-4 max-w-3xl opacity-100">
               <p className="text-xl lg:text-2xl">Fale com nosso</p>
               <h2 className="text-3xl md:text-5xl font-extrabold lg:text-7xl">
-                Engenheiro especialista em <br />
-                <span className="text-[#ffaa00]">Energia Solar.</span>
+                {props.data.specialist} especialista em
+                <br />
+                <span className="text-[#ffaa00]">{props.data.specialty}</span>
               </h2>
               <p className="text-xl md:text-2xl max-w-[40ch]">
-                Receba agora um atendimento personalizado do nosso engenheiro
-                que atende a instalações de Energia Solar todos os dias!
+                {props.data.text}
               </p>
             </div>
 
@@ -44,7 +44,7 @@ export function SpecialistInformation(props: any) {
                   className="flex items-center gap-2 justify-center bg-green-500 font-bold py-3 px-6 rounded-3xl md:text-lg hover:bg-green-200 w-fit"
                 >
                   <WhatsappLogo size={28} />
-                  <p>Falar com o engenheiro</p>
+                  <p>Falar com o {props.data.specialist.toLowerCase()}</p>
                 </a>
                 <a href="tel:48984110903" className="text-center">
                   (48) 98411-0903

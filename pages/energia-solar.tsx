@@ -99,7 +99,13 @@ const SolarGeneration: NextPage = () => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
-      <SpecialistInformation />
+      <SpecialistInformation
+        data={{
+          specialist: 'Engenheiro ',
+          specialty: 'Energia Solar.',
+          text: 'Receba agora um atendimento personalizado do nosso engenheiro que atende a instalações de Energia Solar todos os dias!',
+        }}
+      />
       <Diagram data={solarFlux} Image />
       <WorkNumbers />
       <Advantages />
