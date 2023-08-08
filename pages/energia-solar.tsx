@@ -1,6 +1,5 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
-import { WhatsappLogo } from 'phosphor-react';
 import About from '../components/Ads/AboutEngineer';
 import Advantages from '../components/Ads/SolarAdvantages';
 import WorkNumbers from '../components/Ads/WorkNumbers';

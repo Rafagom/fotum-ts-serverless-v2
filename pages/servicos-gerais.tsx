@@ -1,6 +1,5 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import {
   HouseLine,
   Lightbulb,
@@ -14,7 +13,6 @@ import About from '../components/Ads/AboutEngineer';
 import GeneralAdvantages from '../components/Ads/GeneralAdvantages';
 import WorkNumbers from '../components/Ads/WorkNumbers';
 import { Footer } from '../components/Footer';
-import { Header } from '../components/Header';
 import Diagram from '../components/Diagram';
 import { SpecialistInformation } from '../components/SpecialistInformation';
 

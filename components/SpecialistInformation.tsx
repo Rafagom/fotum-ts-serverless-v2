@@ -1,4 +1,3 @@
-import { Head } from 'next/document';
 import { WhatsappLogo } from 'phosphor-react';
 import { Header } from './Header';
 import Image from 'next/image';

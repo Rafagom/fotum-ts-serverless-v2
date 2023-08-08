@@ -1,24 +1,15 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import { LadderSimple, ShieldCheck, WhatsappLogo } from 'phosphor-react';
 import About from '../components/Ads/AboutEngineer';
 import Advantages from '../components/Ads/SolarAdvantages';
 import WorkNumbers from '../components/Ads/WorkNumbers';
 import { Footer } from '../components/Footer';
-import { Header } from '../components/Header';
 import Diagram from '../components/Diagram';
-import {
-  ThermometerCold,
-  Wrench,
-  Snowflake,
-  Plug,
-  Ladder,
-  Repeat,
-} from 'phosphor-react';
+import { Wrench, Snowflake, Repeat } from 'phosphor-react';
 import { SpecialistInformation } from '../components/SpecialistInformation';
 
-const SolarGeneration: NextPage = () => {
+const AirConditioningServices: NextPage = () => {
   const airConditioningServices: {
     name: string;
     icon: any;
@@ -113,4 +104,4 @@ const SolarGeneration: NextPage = () => {
     </>
   );
 };
-export default SolarGeneration;
+export default AirConditioningServices;
