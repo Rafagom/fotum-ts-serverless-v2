@@ -4,9 +4,7 @@ import { useEffect, useState } from 'react';
 
 function Diagram(props: any) {
   const animation = useAnimation();
-
   const [order, setOrder] = useState(0);
-  const [animationStart, setAnimationStart] = useState(false);
 
   async function sequence() {
     await animation.start({
@@ -27,7 +25,10 @@ function Diagram(props: any) {
   }, [order]);
 
   return (
-    <div className="bg-white pb-10">
+    <div
+      className="bg-white pb-10 scroll-mt-[4.5rem] lg:scroll-mt-14"
+      id="como-funciona"
+    >
       <div className="flex flex-col p-4 gap-6  lg:max-w-[800px] lg:mx-auto">
         <h1 className="text-2xl font-bold">Como Funciona:</h1>
         <div
