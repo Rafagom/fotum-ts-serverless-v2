@@ -97,7 +97,7 @@ const AirConditioningServices: NextPage = () => {
         data={{
           specialist: 'Técnico ',
           specialty: 'instalação de sistemas de ar condicionado.',
-          text: 'Receba agora atendimento personalizado do nosso técnico, especializado em instalações de ar condicionado em todos os dias da semana!',
+          text: 'Receba agora atendimento personalizado do nosso técnico especializado em instalações de ar condicionado em todos os dias da semana!',
         }}
       />
       <Diagram data={airConditioningServices} Icon />
