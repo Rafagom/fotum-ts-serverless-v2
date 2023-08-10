@@ -1,67 +1,61 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { LadderSimple, ShieldCheck, WhatsappLogo } from 'phosphor-react';
 import About from '../components/Ads/AboutEngineer';
 import Advantages from '../components/Ads/SolarAdvantages';
 import WorkNumbers from '../components/Ads/WorkNumbers';
 import { Footer } from '../components/Footer';
 import Diagram from '../components/Diagram';
+import { Wrench, Snowflake, Repeat } from 'phosphor-react';
 import { SpecialistInformation } from '../components/SpecialistInformation';
 
-const SolarGeneration: NextPage = () => {
-  const solarFlux: {
+const AirConditioningServices: NextPage = () => {
+  const airConditioningServices: {
     name: string;
-    pathStart: string;
+    icon: any;
     pathEnd: string;
     text: string;
     start: number;
   }[] = [
     {
-      name: 'Sol',
-      pathStart: '/sol.png',
-      pathEnd: '/solEnd.png',
+      name: 'Instalação padrão',
+      icon: <ShieldCheck size={64} />,
+      pathEnd: '/standardInstallation.png',
       start: 0,
 
-      text: 'A luz do sol chega até os painéis.',
+      text: 'Instalação padrão de ar condicionado',
     },
     {
-      name: 'Painel Solar',
-      pathStart: '/solarPanel.png',
-      pathEnd: 'solarPanelEnd.png',
+      name: 'Instalação especializada',
+      icon: <Snowflake size={64} />,
+      pathEnd: '/specializedInstallation.png',
       start: 1,
 
-      text: 'Os painéis geram corrente contínua.',
+      text: 'Instalação especializada de ar condicionado',
     },
     {
-      name: 'Inversor',
-      pathStart: '/gerador.png',
-      pathEnd: '/geradorEnd.png',
+      name: 'Manutenção preventiva',
+      icon: <Wrench size={64} />,
+      pathEnd: '/maintenance.png',
       start: 2,
 
-      text: ' Os inversores transformam corrente contínua em alternada.',
+      text: 'Manutenção preventiva de sistemas de ar condicionado',
     },
     {
-      name: 'Cozinha',
-      pathStart: '/cozinha.png',
-      pathEnd: '/cozinhaEnd.png',
+      name: 'Instalações com rapel',
+      icon: <LadderSimple size={64} />,
+      pathEnd: '/rapelInstallation.png',
       start: 3,
 
-      text: 'Os equipamentos elétricos usam a energia solar.',
+      text: 'Instalações de ar condicionado realizadas com rapel',
     },
     {
-      name: 'Sustentabilidade',
-      pathStart: '/sustentabilidade.png',
-      pathEnd: '/sustentabilidadeEnd.png',
+      name: 'Upgrade e substituição',
+      icon: <Repeat size={64} />,
+      pathEnd: '/upgrade.png',
       start: 4,
 
-      text: '  A energia não utilizada é devolvida gerando desconto na conta.',
-    },
-    {
-      name: 'Investir',
-      pathStart: '/investir.png',
-      pathEnd: '/investirEnd.png',
-      start: 5,
-
-      text: 'E é assim que você pode economizar até 95% da conta.',
+      text: 'Upgrade, substituição e otimização de sistemas de ar condicionado',
     },
   ];
 
@@ -101,12 +95,12 @@ const SolarGeneration: NextPage = () => {
       </Head>
       <SpecialistInformation
         data={{
-          specialist: 'Engenheiro ',
-          specialty: 'Energia Solar.',
-          text: 'Receba agora um atendimento personalizado do nosso engenheiro que atende a instalações de Energia Solar todos os dias!',
+          specialist: 'Técnico ',
+          specialty: 'instalação de sistemas de ar condicionado.',
+          text: 'Receba agora atendimento personalizado do nosso técnico especializado em instalações de ar condicionado em todos os dias da semana!',
         }}
       />
-      <Diagram data={solarFlux} Image />
+      <Diagram data={airConditioningServices} Icon />
       <WorkNumbers />
       <Advantages />
       <div className="pt-48 pb-10">
@@ -116,4 +110,4 @@ const SolarGeneration: NextPage = () => {
     </>
   );
 };
-export default SolarGeneration;
+export default AirConditioningServices;
