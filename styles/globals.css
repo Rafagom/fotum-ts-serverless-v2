@@ -3,134 +3,104 @@
 @tailwind utilities;
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
-	@apply bg-white text-[#00324b];
+    @apply bg-white text-[#00324b];
 }
 
 .mobile-welcome-gradient {
-	background: rgb(2, 0, 36);
-	background: linear-gradient(
-		0deg,
-		rgba(2, 0, 36, 1) 0%,
-		rgba(0, 50, 75, 1) 27%,
-		rgba(0, 212, 255, 0) 72%
-	);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        0deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(0, 50, 75, 1) 27%,
+        rgba(0, 212, 255, 0) 72%
+    );
 }
 
 .bounce {
-	animation: bounce 1.5s infinite alternate;
-	-webkit-animation: bounce 1.5s infinite alternate;
+    animation: bounce 1.5s infinite alternate;
+    -webkit-animation: bounce 1.5s infinite alternate;
 }
 
 @media (min-width: 640px) and (max-width: 1024px) {
-	.bg-hero {
-		background: url("/CME5.png") no-repeat left bottom;
-		background-size: cover;
-	}
+    .bg-hero {
+        background: url("/CME5.png") no-repeat left bottom;
+        background-size: cover;
+    }
 }
 
 @keyframes bounce {
-	from {
-		transform: translateY(10px);
-	}
-	to {
-		transform: translateY(0px);
-	}
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 @-webkit-keyframes bounce {
-	from {
-		transform: translateY(10px);
-	}
-	to {
-		transform: translateY(0px);
-	}
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
 .chevron {
-	top: 2rem;
-	position: absolute;
-	width: 28px;
-	height: 8px;
-	opacity: 0;
-	transform: scale3d(0.5, 0.5, 0.5);
-	animation: move 3s ease-out infinite;
+    top: 2rem;
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
 }
 
 .chevron:first-child {
-	animation: move 3s ease-out 1s infinite;
+    animation: move 3s ease-out 1s infinite;
 }
 
 .chevron:nth-child(2) {
-	animation: move 3s ease-out 2s infinite;
+    animation: move 3s ease-out 2s infinite;
 }
 
 .chevron:before,
 .chevron:after {
-	content: " ";
-	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 51%;
-	background: #00324b;
+    content: " ";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #00324b;
 }
 
 .chevron:before {
-	left: 0;
-	transform: skew(0deg, 30deg);
+    left: 0;
+    transform: skew(0deg, 30deg);
 }
 
 .chevron:after {
-	right: 0;
-	width: 50%;
-	transform: skew(0deg, -30deg);
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
 }
 
 @keyframes move {
-	25% {
-		opacity: 1;
-	}
-	33% {
-		opacity: 1;
-		transform: translateY(30px);
-	}
-	67% {
-		opacity: 1;
-		transform: translateY(40px);
-	}
-	100% {
-		opacity: 0;
-		transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-	}
-}
-
-.shake {
-	animation: shake 5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
-	transform: translate3d(0, 0, 0);
-	backface-visibility: hidden;
-	perspective: 1000px;
-}
-
-@keyframes shake {
-	2%,
-	18% {
-		transform: translate3d(-1px, 0, 0);
-	}
-
-	4%,
-	16% {
-		transform: translate3d(2px, 0, 0);
-	}
-
-	6%,
-	10%,
-	14% {
-		transform: translate3d(-4px, 0, 0);
-	}
-
-	8%,
-	12% {
-		transform: translate3d(4px, 0, 0);
-	}
+    25% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
 }
