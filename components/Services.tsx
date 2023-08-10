@@ -52,21 +52,22 @@ export function Services() {
           <>
             <Disclosure.Button className="grid grid-cols-[1fr,10fr,1fr]  items-center rounded py-4 border-2 gap-4 px-4 hover:border-[#ffaa00] ">
               <Image
-                src={'/pen-ruler-solid.svg'}
+                className="text-yellow-500"
+                src={'/screwdriver-wrench-solid.svg'}
                 alt={'solar panel logo'}
                 width={24}
                 height={24}
               />
-              <p className="text-left">Projetos</p>
+              <p className="text-left">Instalações elétricas</p>
               <CaretUp
                 size={20}
                 className={open ? 'rotate-180 transform' : ''}
               />
             </Disclosure.Button>
             <Disclosure.Panel className="flex flex-col text-center gap-y-4">
-              Projetos de instalações elétricas residenciais, comerciais e
-              prediais, entradas de energia elétrica em baixa e média tensão,
-              SPDA (para-raios) e bombeiros.
+              Projetamos e executamos instalações elétricas, incluindo
+              infraestrutura, entradas de energia, luminotécnica, lustres,
+              quadros, SPDA (para-raios), motores e bombeiros.
               <Link
                 href="generalServices"
                 as="servicos-gerais"
@@ -83,25 +84,23 @@ export function Services() {
           <>
             <Disclosure.Button className="grid grid-cols-[1fr,10fr,1fr]  items-center rounded py-4 border-2 gap-4 px-4 hover:border-[#ffaa00] ">
               <Image
-                className="text-yellow-500"
-                src={'/screwdriver-wrench-solid.svg'}
-                alt={'solar panel logo'}
+                src={'/snowflake-solid.svg'}
+                alt={'snowflake icon'}
                 width={24}
                 height={24}
               />
-              <p className="text-left">Instalações elétricas</p>
+              <p className="text-left">Ar-condicionado</p>
               <CaretUp
                 size={20}
                 className={open ? 'rotate-180 transform' : ''}
               />
             </Disclosure.Button>
             <Disclosure.Panel className="flex flex-col text-center gap-y-4">
-              Mão de obra qualificada para execução de projetos elétricos e
-              luminotécnicos, entradas de energia, infraestrutura, instalação de
-              lustres, motores e quadros.
+              Eleve seu conforto com nossas instalações de Ar Condicionado e
+              garanta ambientes agradáveis em todas as estações.
               <Link
                 href="generalServices"
-                as="servicos-gerais"
+                as="ar-condicionado"
                 className="text-center font-semibold tex"
               >
                 Saiba mais...

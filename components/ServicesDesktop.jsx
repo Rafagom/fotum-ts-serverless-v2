@@ -4,8 +4,9 @@ import Transition from '../utils/Transition';
 import engLucas from '../public/engLucas.jpg';
 import sandro from '../public/Sandro.jpeg';
 import img5 from '../public/img5.jpeg';
-import img4 from '../public/img4.jpeg';
+import img4 from '../public/img4.jpg';
 import img6 from '../public/img6.jpeg';
+import CME5 from '../public/CME5.png';
 
 import Image from 'next/image';
 
@@ -146,11 +147,9 @@ function Features() {
                       Instalações Elétricas
                     </div>
                     <div className="text-gray-600">
-                      Com mão de obra qualificada, executamos e projetamos
-                      instalações elétricas, incluindo infraestrutura, entradas
-                      de energia, luminotécnica, dispositivos como lustres e
-                      quadros, além de SPDA (para-raios) e sistemas para
-                      bombeiros.
+                      Projetamos e executamos instalações elétricas, incluindo
+                      infraestrutura, entradas de energia, luminotécnica,
+                      lustres, quadros, SPDA (para-raios), motores e bombeiros.
                     </div>
                   </div>
                 </a>
@@ -212,7 +211,7 @@ function Features() {
                       <Image
                         height={360}
                         width={600}
-                        src={sandro}
+                        src={CME5}
                         alt="Features bg"
                       />
                     </div>
