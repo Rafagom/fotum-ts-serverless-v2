@@ -15,6 +15,7 @@ import WorkNumbers from '../components/Ads/WorkNumbers';
 import { Footer } from '../components/Footer';
 import Diagram from '../components/Diagram';
 import { SpecialistInformation } from '../components/SpecialistInformation';
+import img4 from './img4.jpg';
 
 const SolarGeneration: NextPage = () => {
   const solarFlux: {
@@ -113,6 +114,7 @@ const SolarGeneration: NextPage = () => {
           specialist: 'Técnico ',
           specialty: 'projetos e instalações elétricas.',
           text: 'Receba agora seu atendimento personalizado do nosso técnico que atende serviços elétricos todos os dias!',
+          image: 'services',
         }}
       />
       <Diagram data={solarFlux} Icon />
