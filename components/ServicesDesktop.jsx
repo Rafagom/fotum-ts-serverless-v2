@@ -4,7 +4,9 @@ import Transition from '../utils/Transition';
 import engLucas from '../public/engLucas.jpg';
 import sandro from '../public/Sandro.jpeg';
 import img5 from '../public/img5.jpeg';
-import img4 from '../public/img4.jpeg';
+import img4 from '../public/img4.jpg';
+import img6 from '../public/img6.jpeg';
+import CME5 from '../public/CME5.png';
 
 import Image from 'next/image';
 
@@ -88,7 +90,7 @@ function Features() {
                     </div>
                   </div>
                 </a>
-                <a
+                {/* <a
                   className={`grid grid-cols-[1fr,7fr] items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 gap-3 max-w-md xl:max-w-full ${
                     tab !== 2
                       ? 'bg-white shadow-md border-gray-200 hover:shadow-lg'
@@ -119,6 +121,37 @@ function Features() {
                       tensão, SPDA (para-raios) e bombeiros.
                     </div>
                   </div>
+                </a> */}
+                <a
+                  className={`grid grid-cols-[1fr,7fr] items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 gap-3 max-w-md xl:max-w-full ${
+                    tab !== 2
+                      ? 'bg-white shadow-md border-gray-200 hover:shadow-lg'
+                      : 'bg-gray-200 border-transparent'
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(2);
+                  }}
+                >
+                  <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full shadow flex-shrink-0 ">
+                    <Image
+                      height={24}
+                      width={24}
+                      src={'/screwdriver-wrench-solid.svg'}
+                      alt={'solar panel logo'}
+                    />
+                  </div>
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Instalações Elétricas
+                    </div>
+                    <div className="text-gray-600">
+                      Projetamos e executamos instalações elétricas, incluindo
+                      infraestrutura, entradas de energia, luminotécnica,
+                      lustres, quadros, SPDA (para-raios), motores e bombeiros.
+                    </div>
+                  </div>
                 </a>
                 <a
                   className={`grid grid-cols-[1fr,7fr] items-center justify-between text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 gap-3 max-w-md xl:max-w-full ${
@@ -136,18 +169,18 @@ function Features() {
                     <Image
                       height={24}
                       width={24}
-                      src={'/screwdriver-wrench-solid.svg'}
+                      src={'/snowflake-solid.svg'}
                       alt={'solar panel logo'}
                     />
                   </div>
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Instalações Elétricas
+                      Ar-condicionado
                     </div>
                     <div className="text-gray-600">
-                      Mão de obra qualificada para execução de projetos
-                      elétricos e luminotécnicos, entradas de energia,
-                      infraestrutura, instalação de lustres, motores e quadros.
+                      Eleve seu conforto com nossas instalações de Ar
+                      Condicionado e garanta ambientes agradáveis em todas as
+                      estações.
                     </div>
                   </div>
                 </a>
@@ -178,14 +211,14 @@ function Features() {
                       <Image
                         height={360}
                         width={600}
-                        src={sandro}
+                        src={CME5}
                         alt="Features bg"
                       />
                     </div>
                   </div>
                 </Transition>
                 {/* Item 2 */}
-                <Transition
+                {/* <Transition
                   show={tab === 2}
                   appear={true}
                   className="w-full"
@@ -206,10 +239,10 @@ function Features() {
                       />
                     </div>
                   </div>
-                </Transition>
-                {/* Item 3 */}
+                </Transition> */}
+                {/* Item 2 */}
                 <Transition
-                  show={tab === 3}
+                  show={tab === 2}
                   appear={true}
                   className="w-full"
                   enter="transition ease-in-out duration-700 transform order-first"
@@ -227,6 +260,24 @@ function Features() {
                         src={img4}
                         alt="Features bg"
                       />
+                    </div>
+                  </div>
+                </Transition>
+                {/* Item 3 */}
+                <Transition
+                  show={tab === 3}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <div className="relative inline-flex flex-col shadow-lg w-full">
+                    <div className="hidden lg:flex">
+                      <Image src={img6} />
                     </div>
                   </div>
                 </Transition>
