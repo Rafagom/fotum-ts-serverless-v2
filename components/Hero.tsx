@@ -30,10 +30,7 @@ export function Hero() {
 					></video>
 				</div>
 
-				<div
-					className=" flex flex-col max-w-[700px] place-self-end md:gap-8 lg:gap-10 md:h-full  justify-center items-center md:row-start-1"
-					data-aos="zoom-y-out"
-				>
+				<div className=" flex flex-col max-w-[700px] place-self-end md:gap-8 lg:gap-10 md:h-full  justify-center items-center md:row-start-1">
 					<p className="px-4 text-lg md:text-base lg:text-2xl xl:text-3xl md:px-0">
 						Com mais de 10 anos de experiência em serviços elétricos
 						de excelência, oferecendo as melhores soluções em
