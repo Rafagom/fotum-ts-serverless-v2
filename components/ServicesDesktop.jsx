@@ -284,11 +284,31 @@ function Features() {
 									leaveStart="opacity-100 translate-y-0"
 									leaveEnd="opacity-0 -translate-y-16"
 								>
-									<div className="relative inline-flex flex-col shadow-lg w-full">
-										<div className="hidden lg:flex">
+									<div className="relative inline-flex flex-col shadow-lg w-fit">
+										<div className="hidden lg:flex relative">
 											<Image
-												src={img6}
+												src={"/ar0.jpeg"}
 												alt="Features bg"
+												height={600}
+												width={300}
+											/>
+											<Image
+												src={"/ar1.jpeg"}
+												alt="Features bg"
+												height={600}
+												width={300}
+											/>
+											<Image
+												src={"/ar2.jpeg"}
+												alt="Features bg"
+												height={600}
+												width={300}
+											/>
+											<Image
+												src={"/ar3.jpeg"}
+												alt="Features bg"
+												height={600}
+												width={300}
 											/>
 										</div>
 									</div>
