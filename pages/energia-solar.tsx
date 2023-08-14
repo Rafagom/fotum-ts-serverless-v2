@@ -26,7 +26,7 @@ const SolarGeneration: NextPage = () => {
     {
       name: 'Painel Solar',
       pathStart: '/solarPanel.png',
-      pathEnd: 'solarPanelEnd.png',
+      pathEnd: '/solarPanelEnd.png',
       start: 1,
 
       text: 'Os painéis geram corrente contínua.',
@@ -36,8 +36,7 @@ const SolarGeneration: NextPage = () => {
       pathStart: '/gerador.png',
       pathEnd: '/geradorEnd.png',
       start: 2,
-
-      text: ' Os inversores transformam corrente contínua em alternada.',
+      text: 'Os inversores transformam corrente contínua em alternada.',
     },
     {
       name: 'Cozinha',
@@ -53,14 +52,13 @@ const SolarGeneration: NextPage = () => {
       pathEnd: '/sustentabilidadeEnd.png',
       start: 4,
 
-      text: '  A energia não utilizada é devolvida gerando desconto na conta.',
+      text: 'A energia não utilizada é devolvida gerando desconto na conta.',
     },
     {
       name: 'Investir',
       pathStart: '/investir.png',
       pathEnd: '/investirEnd.png',
       start: 5,
-
       text: 'E é assim que você pode economizar até 95% da conta.',
     },
   ];
