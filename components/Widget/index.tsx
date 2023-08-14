@@ -53,13 +53,13 @@ export function Widget() {
 					</span>
 				</div> */}
 					</Popover.Button>
-					<Popover.Panel className="absolute z-40 -top-24 lg:-top-16 right-0 ">
-						<div className=" grid grid-rows-2 gapy-4 h-36 w-[60vw] bg-[#ffaa00] rounded-2xl relative shadow-md">
+					<Popover.Panel className="absolute z-40 -top-24 lg:-top-24 right-0 ">
+						<div className=" grid grid-rows-2 gapy-4 h-36 px-4 lg:px-8 max-w-sm bg-[#ffaa00] rounded-2xl relative shadow-md">
 							<a
 								href="https://wa.me/message/2KTISK2P7CG6E1"
 								rel="noreferrer"
 								target="_blank"
-								className="flex items-center justify-start gap-2 py-4 px-2 text-white "
+								className="flex items-center justify-center gap-2 py-4 px-2 text-white "
 							>
 								<WhatsappLogo className="h-full w-fit" />
 								<p>WhatsApp</p>
@@ -68,7 +68,7 @@ export function Widget() {
 							<div className="h-[1px] w-full absolute bg-white top-1/2"></div>
 							<a
 								href="tel:48984110903"
-								className="flex items-center justify-start gap-2 py-4 px-2 text-white"
+								className="flex items-center justify-center gap-2 py-4 px-2 text-white"
 							>
 								<Phone className="h-full w-fit" />
 								<p className="whitespace-nowrap">
