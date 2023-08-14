@@ -104,18 +104,18 @@ export function Header() {
 
 					<Transition
 						as={Fragment}
-						enter="duration-150 ease-out"
-						enterFrom="opacity-0 scale-95"
-						enterTo="opacity-100 scale-100"
+						enter="duration-300 ease-out"
+						enterFrom="opacity-100 -translate-y-full"
+						enterTo="opacity-100 translate-y-0"
 						leave="duration-100 ease-in"
-						leaveFrom="opacity-100 scale-100"
-						leaveTo="opacity-0 scale-95"
+						leaveFrom="opacity-100 translate-y-0"
+						leaveTo="opacity-0 -translate-y-full"
 					>
 						<Popover.Panel
 							focus
-							className="absolute z-50 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+							className="absolute z-50 top-0 w-screen h-screen md:hidden"
 						>
-							<div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+							<div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden h-full">
 								<div className="px-5 pt-4 flex items-center justify-between">
 									<Link
 										href="/"
@@ -139,7 +139,8 @@ export function Header() {
 										</Popover.Button>
 									</div>
 								</div>
-								<div className="flex flex-col px-8 pt-2 pb-2 space-y-1 items-center gap-2 ">
+
+								<div className="flex flex-col px-8  items-center justify-center  my-auto pt-20 divide-y">
 									{navigation.map((item) => (
 										<Link
 											key={item.name}
