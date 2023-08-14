@@ -55,7 +55,11 @@ const Home: NextPage = () => {
 					<MobileWelcome />
 				</div>
 
-				<div id="hero" className="flex flex-col pt-24">
+				<div
+					id="hero"
+					className="flex flex-col pt-24"
+					data-aos="zoom-y-out"
+				>
 					<div className="flex flex-col md:grid md:grid-rows-2  gap-y-10 pb-16">
 						<div className="relative ">
 							<Hero />

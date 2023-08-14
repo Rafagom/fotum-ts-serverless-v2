@@ -9,7 +9,7 @@ export function Hero2() {
 				<div className="hidden  justify-center items-center md:grid md:col-start-1 rounded-r-3xl relative w-full h-full">
 					<Image
 						className=" rounded-3xl "
-						src={"/Sandro.jpeg"}
+						src={"/panel-on-rooftop.jpg"}
 						alt={"Geração residencial"}
 						layout="fill"
 					/>
@@ -19,7 +19,7 @@ export function Hero2() {
 					className=" flex flex-col  md:gap-6 md:h-full justify-center items-center py-2 lg:py-0"
 					data-aos="zoom-y-out"
 				>
-					<p className="px-4 text-lg md:text-base lg:text-2xl xl:text-3xl md:px-0">
+					<p className="px-4 text-lg md:text-base lg:text-xl xl:text-2xl font-medium  md:px-0">
 						Equipe especializada e altamente capacitada, oferecemos
 						segurança e garantia em todos os serviços prestados,
 						atendendo à todas as normas técnicas e de segurança
