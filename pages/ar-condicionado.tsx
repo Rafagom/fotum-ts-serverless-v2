@@ -2,12 +2,14 @@ import { NextPage } from "next";
 import Head from "next/head";
 import { LadderSimple, ShieldCheck, WhatsappLogo } from "phosphor-react";
 import About from "../components/Ads/AboutEngineer";
-import Advantages from "../components/Ads/SolarAdvantages";
+import Advantages from "../components/Ads/GeneralAdvantages";
 import WorkNumbers from "../components/Ads/WorkNumbers";
 import { Footer } from "../components/Footer";
 import Diagram from "../components/Diagram";
 import { Wrench, Snowflake, Repeat } from "phosphor-react";
 import { SpecialistInformation } from "../components/SpecialistInformation";
+import rapelImg from "../public/rapel.png";
+import Image from "next/image";
 
 const AirConditioningServices: NextPage = () => {
 	const airConditioningServices: {
@@ -19,7 +21,7 @@ const AirConditioningServices: NextPage = () => {
 	}[] = [
 		{
 			name: "Instalação padrão",
-			icon: <ShieldCheck size={64} />,
+			icon: <ShieldCheck size={52} />,
 			pathEnd: "/standardInstallation.png",
 			start: 0,
 
@@ -27,7 +29,7 @@ const AirConditioningServices: NextPage = () => {
 		},
 		{
 			name: "Instalação especializada",
-			icon: <Snowflake size={64} />,
+			icon: <Snowflake size={52} />,
 			pathEnd: "/specializedInstallation.png",
 			start: 1,
 
@@ -35,7 +37,7 @@ const AirConditioningServices: NextPage = () => {
 		},
 		{
 			name: "Manutenção preventiva",
-			icon: <Wrench size={64} />,
+			icon: <Wrench size={52} />,
 			pathEnd: "/maintenance.png",
 			start: 2,
 
@@ -43,7 +45,7 @@ const AirConditioningServices: NextPage = () => {
 		},
 		{
 			name: "Instalações com rapel",
-			icon: <LadderSimple size={64} />,
+			icon: <Image src={rapelImg} alt="Rapel" width={72} height={72} />,
 			pathEnd: "/rapelInstallation.png",
 			start: 3,
 
@@ -51,7 +53,7 @@ const AirConditioningServices: NextPage = () => {
 		},
 		{
 			name: "Upgrade e substituição",
-			icon: <Repeat size={64} />,
+			icon: <Repeat size={52} />,
 			pathEnd: "/upgrade.png",
 			start: 4,
 
