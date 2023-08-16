@@ -43,15 +43,9 @@ export function Widget() {
 							</div>
 
 							<p className="text-[0.6rem] lg:text-xs ">
-								Emergência 24hrs
+								Plantão 24hrs
 							</p>
 						</div>
-
-						{/* <div className="hidden show sm:flex ">
-					<span className="max-w-0 overflow-hidden group-hover:max-w-xs duration-700 whitespace-nowrap ">
-						Contato
-					</span>
-				</div> */}
 					</Popover.Button>
 					<Popover.Panel className="absolute z-40 -top-24 lg:-top-24 right-0 ">
 						<div className=" grid grid-rows-2 gapy-4 h-36 px-4 lg:px-8 max-w-sm bg-[#ffaa00] rounded-2xl relative shadow-md">
