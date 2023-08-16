@@ -73,7 +73,7 @@ const AirConditioningServices: NextPage = () => {
 					name="description"
 					content="Com mais de 10 anos de experiência em serviços elétricos de excelência, oferecendo as melhores soluções em projetos, instalações e energia solar fotovoltaica."
 				/>
-				<title>Fótum Engenharia | Energia Solar</title>
+				<title>Fótum Engenharia | Ar Condicionado</title>
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
