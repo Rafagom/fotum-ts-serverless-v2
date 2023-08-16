@@ -20,7 +20,7 @@ function WorkNumbers() {
 		>
 			<div className="flex flex-col items-center justify-center border-2 border-[#00324b] rounded-3xl p-2">
 				<AnimatedNumber
-					duration={3000}
+					duration={1500}
 					value={100}
 					formatValue={(value: number) => `+${value.toFixed(0)}`}
 				/>
@@ -29,7 +29,7 @@ function WorkNumbers() {
 
 			<div className="flex flex-col items-center justify-center border-2 border-[#00324b] rounded-3xl p-2">
 				<AnimatedNumber
-					duration={3000}
+					duration={1500}
 					value={245}
 					formatValue={(n: number) => `+${n.toFixed(0)} Mwh`}
 				/>
@@ -38,7 +38,7 @@ function WorkNumbers() {
 
 			<div className="flex flex-col items-center justify-center border-2 border-[#00324b] rounded-3xl p-2">
 				<AnimatedNumber
-					duration={3000}
+					duration={1500}
 					value={180}
 					formatValue={(n: number) => `+ R$ ${n.toFixed(0)} mil`}
 				/>

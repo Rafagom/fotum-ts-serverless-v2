@@ -1,11 +1,8 @@
 import { Phone, WhatsappLogo } from "phosphor-react";
 import { Popover } from "@headlessui/react";
 import { WidgetForm } from "./WidgetForm";
-import { useRouter } from "next/router";
 
 export function Widget() {
-	const router = useRouter();
-
 	return (
 		<Popover className="fixed bottom-20 right-5 z-20 flex flex-col gap-5 justify-end items-end ">
 			{({ open }) => (

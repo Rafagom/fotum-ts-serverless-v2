@@ -95,12 +95,12 @@ export function SpecialistInformation(props: any) {
 				<>
 					<Header />
 					<div
-						className="bg-[length:320px] relative overflow-x-hidden "
+						className=" relative overflow-x-hidden"
 						// data-aos="fade-left"
 						// data-aos-easing="linear"
 						// data-aos-duration="1500"
 					>
-						<div className="hidden  absolute inset-0 sm:grid grid-cols-4 lg:gap-x-8 xl:gap-x-16">
+						<div className="hidden  absolute inset-0 sm:grid grid-cols-4 lg:gap-x-8 xl:gap-x-16 mt-20">
 							<div
 								className="relative"
 								data-aos="fade-left"
