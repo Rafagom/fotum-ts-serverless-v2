@@ -95,6 +95,7 @@ const AirConditioningServices: NextPage = () => {
 				<meta name="msapplication-TileColor" content="#da532c" />
 				<meta name="theme-color" content="#ffffff"></meta>
 			</Head>
+
 			<SpecialistInformation
 				data={{
 					specialist: "Técnico ",
@@ -103,9 +104,14 @@ const AirConditioningServices: NextPage = () => {
 					image: "air conditioner",
 				}}
 			/>
-			<Diagram data={airConditioningServices} Icon title="Serviços:" />
-			<WorkNumbers />
-			<Advantages />
+			<div className="bg-[#f2f2f2] pt-5">
+				<Diagram
+					data={airConditioningServices}
+					Icon
+					title="Serviços:"
+				/>
+			</div>
+
 			<div className="pt-48 pb-10">
 				<About />
 			</div>

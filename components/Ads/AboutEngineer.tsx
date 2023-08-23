@@ -26,7 +26,8 @@ function AboutEngineer() {
 
 					<div className="flex flex-col gap-4 col-span-2">
 						<h2 className="text-2xl font-bold text-center ">
-							{router.pathname == "/servicos-gerais"
+							{router.pathname == "/servicos-gerais" ||
+							router.pathname == "/ar-condicionado"
 								? "Téc"
 								: "Eng"}
 							. Lucas Marcelo de Deus <br />{" "}

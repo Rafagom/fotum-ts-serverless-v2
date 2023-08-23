@@ -26,7 +26,7 @@ function Diagram(props: any) {
 
 	return (
 		<div
-			className="bg-white pb-10 scroll-mt-[4.5rem] lg:scroll-mt-14"
+			className={` pb-10 scroll-mt-[4.5rem] lg:scroll-mt-14  ${props.className}}`}
 			id="como-funciona"
 		>
 			<div className="flex flex-col p-4 gap-6  lg:max-w-[800px] lg:mx-auto">
