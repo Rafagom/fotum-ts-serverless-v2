@@ -34,7 +34,7 @@ export function Widget() {
 							}`}
 						></div>
 						<div className="h-6 flex items-center justify-center flex-col">
-							<div className="flex h-full">
+							<div className="flex h-full w-fit">
 								<WhatsappLogo className="w-full h-full" />
 								<Phone className="w-full h-full" />
 							</div>
