@@ -101,7 +101,10 @@ export function Services() {
 							Eleve seu conforto com nossas instalações de Ar
 							Condicionado e garanta ambientes agradáveis em todas
 							as estações.
-							<Link href="generalServices" as="servicos-gerais">
+							<Link
+								href="AirConditioningServices"
+								as="ar-condicionado"
+							>
 								<p className="p-2 border w-fit rounded-lg border-[#00324b] ">
 									Saiba mais...
 								</p>
